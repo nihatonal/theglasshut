@@ -1,0 +1,28 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 32px 0 146px;
+}
+
+.book-btn-small {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  width: 200px;
+  height: 60px;
+  background-color: var(--color-primary);
+  text-align: center;
+  /* margin-left: 177px;
+  margin-right: 32px; */
+}
+.book-btn-small:hover {
+  background-color: var(--color-primary-hover);
+}

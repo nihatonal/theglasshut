@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Din";
+  src: url("../src/assets/DIN/DIN-Regular.ttf");
+  src: url("../src/assets/DIN/DIN-Medium.ttf") format("embedded-opentype"),
+    url("../src/assets/DIN/DIN-Light.ttf") format("light"),
+    url("../src/assets/DIN/DIN-Regular.ttf") format("truetype");
+}
+
+:root {
+  --color-black: #000;
+  --color-light-black: #333333;
+  --color-white: #fff;
+  --color-primary: #5b6460;
+  --color-primary-hover: #808e88;
+  --color-secondary: #e9ece0;
+  --bg-primary: #5b5b5b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: auto;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.section-container {
+  width: 100%;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/* .section-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--color-primary);
+}
+.section-desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-black);
+}
+.section-option-btn {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-primary);
+} */

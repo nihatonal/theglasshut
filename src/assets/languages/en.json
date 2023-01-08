@@ -1,0 +1,78 @@
+{
+  "hero-suptitle": "Come and stay in out hut hotel near Mariager Fjord in Denmark",
+  "hero-title": "Find peace in the Forest",
+  "navlinks": [
+    "home",
+    "the hut",
+    "the area",
+    "bokking",
+    "about us",
+    "faq"
+  ],
+  "work-items": [
+    {
+      "title": "Deal calculation",
+      "id": "0001",
+      "desc": "Client fills out Application.",
+      "desc2": "The manager calculates the cost of transportation and related services."
+    },
+    {
+      "title": "Contract signing",
+      "id": "0002",
+      "desc": "Our Manager prepares the Agreement on the basis of the Application. Signing of the Agreement can be carried out using EDS"
+    }
+  ],
+  "navlinkss": [
+    {
+      "nav_item": "home"
+    },
+    {
+      "nav_item": "the hut"
+    },
+    {
+      "nav_item": "the area"
+    },
+    {
+      "nav_item": "bokking"
+    },
+    {
+      "nav_item": "about us"
+    },
+    {
+      "nav_item": "faq"
+    }
+  ],
+  "book_now": "Book Now",
+  "from": "from",
+  "per_night": "per night",
+  "homepage_cabins": "The Cabins",
+  "homepage_cabins_desc": "Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.",
+  "read_more": "Read More",
+  "homepage_forest": "The Forest",
+  "homepage_forest_desc": "Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.",
+  "we_are_here": "We Are Here",
+  "facilities": "Facilities",
+  "fridge": "Mini fridge",
+  "kitchen": "Kitchen",
+  "coffee": "Coffee machine",
+  "kettle": "Electric tea kettle",
+  "parking": "Parking",
+  "views": "Breathtaking views",
+  "heating": "Floor heating",
+  "light": "230V",
+  "wifi": "wifi",
+  "shower": "Shower",
+  "toilet": "Flushing toilets",
+  "towels": "Bedding & towels",
+  "aboutus": "More about us",
+  "section_contact-title": "Stay in touch with us",
+  "section_contact-address": " Vesterborg, Denmark",
+  "button_book_hut": "Book a hut",
+  "footer_title": "Newsletter",
+  "email": "Email Address",
+  "footer_desc": "Sign up to our newsletter for special things and receive 10% off your next order.",
+  "footer_item_1": "TERMS AND CONDITIONS",
+  "footer_item_2": "CENCELLATION POLICY",
+  "footer_item_3": "PRIVACY POLICY",
+  "footer_copyright": "© 2021 The Glass Huts"
+}

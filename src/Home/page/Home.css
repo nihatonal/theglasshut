@@ -1,0 +1,26 @@
+.home-section-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--color-primary);
+}
+.home-section-desc {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-black);
+  margin: 50px 0 21px;
+}
+.home-section-btn {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5b6460;
+  border-bottom: 1.5px solid #5b6460;
+}

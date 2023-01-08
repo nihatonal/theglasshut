@@ -1,0 +1,22 @@
+.social-links-wrapper {
+  width: 236px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.social-links-wrapper a {
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-secondary);
+  font-size: 22px;
+  transition: all 0.3s;
+}
+.social-links-wrapper a:hover {
+  color: var(--color-primary);
+  background: var(--color-secondary);
+}

@@ -1,0 +1,89 @@
+.forest-container {
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 150px;
+}
+.forest-content {
+  background: var(--color-secondary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.forest-content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 465px;
+  height: 351px;
+}
+.forest-image-wrapper {
+  background-image: url("../../assets/images/homepage/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forest-image-filter {
+  background: #3e443e;
+  opacity: 0.4;
+  width: 100%;
+  height: 650px;
+  position: absolute;
+}
+.forest-location-wrapper {
+  width: 176px;
+  height: 176px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forest-location-secondline {
+  width: 134px;
+  height: 134px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forest-location-thirdline {
+  width: 96px;
+  height: 96px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.forest-location-thirdline:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.forest-location-desc {
+  width: 71px;
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.forest-container .home-section-btn {
+  font-style: italic;
+  font-weight: 400;
+}

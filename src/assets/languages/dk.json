@@ -1,0 +1,78 @@
+{
+  "hero-suptitle": "Kom og bo på hyttehotel nær Mariager Fjord i Danmark",
+  "hero-title": "Find fred i skoven",
+  "navlinks": [
+    "hjem",
+    "hytten",
+    "området",
+    "bokking",
+    "om os",
+    "faq"
+  ],
+  "work-items": [
+    {
+      "title": "Aftaleberegning",
+      "id": "0001",
+      "desc": "Kunde udfylder ansøgning.",
+      "desc2": "Lederen beregner omkostningerne ved transport og relaterede tjenester."
+    },
+    {
+      "title": "Kontraktunderskrivelse",
+      "id": "0002",
+      "desc": "Vores leder udarbejder Aftalen på baggrund af Ansøgningen. Underskrivelse af Aftalen kan udføres ved hjælp af EDS"
+    }
+  ],
+  "navlinkss": [
+    {
+      "nav_item": "hjem"
+    },
+    {
+      "nav_item": "hytten"
+    },
+    {
+      "nav_item": "området"
+    },
+    {
+      "nav_item": "bokking"
+    },
+    {
+      "nav_item": "om os"
+    },
+    {
+      "nav_item": "faq"
+    }
+  ],
+  "book_now": "Book nu",
+  "from": "fra",
+  "per_night": "per nat",
+  "homepage_cabins": "Hytterne",
+  "homepage_cabins_desc": "Løvtags tre eksklusive og komfortable hytter, Et, Ro og Ly, er tegnet af arkitekt Sigurd Larsen. De har alle et åbent rum med dobbeltseng, dobbelt sovesofa, køkken, separat toilet og udendørs bruser. På taget, omkranset af trætoppe, er der en terrasse, som er cirka ni meter over terræn. Hytterne er bygget op omkring høje, gamle træer, der går gennem hele sommerhuset fra gulv til loft.",
+  "read_more": "Læs mere",
+  "homepage_forest": "Skoven",
+  "homepage_forest_desc": "Løvtags tre eksklusive og komfortable hytter, Et, Ro og Ly, er tegnet af arkitekt Sigurd Larsen. De har alle et åbent rum med dobbeltseng, dobbelt sovesofa, køkken, separat toilet og udendørs bruser. På taget, omkranset af trætoppe, er der en terrasse, som er cirka ni meter over terræn. Hytterne er bygget op omkring høje, gamle træer, der går gennem hele sommerhuset fra gulv til loft.",
+  "we_are_here": "Vi er her",
+  "facilities": "Faciliteter",
+  "fridge": "Minikøleskab",
+  "kitchen": "Køkken",
+  "coffee": "Kaffemaskine",
+  "kettle": "El-te-kedel",
+  "parking": "Parkering",
+  "views": "Betagende udsigt",
+  "heating": "Gulvvarme",
+  "light": "230V",
+  "wifi": "wifi",
+  "shower": "Bruser",
+  "toilet": "Skylning af toiletter",
+  "towels": "Sengetøj og håndklæder",
+  "aboutus": "Mere om os",
+  "section_contact-title": "Hold kontakten med os",
+  "section_contact-address": " Vesterborg, Danmark",
+  "button_book_hut": "Bestil en hytte",
+  "footer_title": "Nyhedsbrev",
+  "email": "E-mail-adresse",
+  "footer_desc": "Tilmeld dig vores nyhedsbrev for specielle ting og modtag 10 % rabat på din næste ordre.",
+  "footer_item_1": "VILKÅR OG BETINGELSER",
+  "footer_item_2": "AFFLYTNINGSPOLITIK",
+  "footer_item_3": "Privatlivspolitik",
+  "footer_copyright": "© 2021 The Glass Huts"
+}

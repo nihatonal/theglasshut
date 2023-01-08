@@ -1,0 +1,78 @@
+{
+  "hero-suptitle": "Kommen Sie und übernachten Sie in unserem Hüttenhotel in der Nähe des Mariager Fjords in Dänemark",
+  "hero-title": "Finde Frieden im Wald",
+  "navlinks": [
+    "Heimat",
+    "die Hütte",
+    "das Gebiet",
+    "Buchen",
+    "über uns",
+    "FAQ"
+  ],
+  "work-items": [
+    {
+      "title": "Deal-Kalkulation",
+      "id": "0001",
+      "desc": "Kunde füllt Antrag aus.",
+      "desc2": "Der Manager berechnet die Transportkosten und die damit verbundenen Dienstleistungen."
+    },
+    {
+      "title": "Vertragsunterzeichnung",
+      "id": "0002",
+      "desc": "Unser Manager bereitet die Vereinbarung auf der Grundlage des Antrags vor. Die Unterzeichnung der Vereinbarung kann mit EDS durchgeführt werden"
+    }
+  ],
+  "navlinksss": [
+    {
+      "nav_item": "Zuhause"
+    },
+    {
+      "nav_item": "die Hütte"
+    },
+    {
+      "nav_item": "das Gebiet"
+    },
+    {
+      "nav_item": "buchen"
+    },
+    {
+      "nav_item": "über uns"
+    },
+    {
+      "nav_item": "FAQ"
+    }
+  ],
+  "book_now": "Jetzt buchen",
+  "from": "von",
+  "per_night": "pro Nacht",
+  "homepage_cabins": "Die Hütten",
+  "homepage_cabins_desc": "Die drei exklusiven und komfortablen Hütten von Løvtag, Et, Ro und Ly, wurden vom Architekten Sigurd Larsen entworfen. Sie alle haben einen offenen Raum mit einem Doppelbett, einem Doppelschlafsofa, einer Küche, einer separaten Toilette und einer Außendusche. Auf dem Dach, umgeben von Baumwipfeln, befindet sich eine Terrasse, die etwa neun Meter über dem Boden liegt. Die Cottages sind um hohe, alte Bäume herum gebaut, die das gesamte Cottage vom Boden bis zur Decke durchziehen.",
+  "read_more": "Weiterlesen",
+  "homepage_forest": "Der Wald",
+  "we_are_here": "Wir sind hier",
+  "homepage_forest_desc": "Die drei exklusiven und komfortablen Hütten von Løvtag, Et, Ro und Ly, wurden vom Architekten Sigurd Larsen entworfen. Sie haben alle einen offenen Raum mit einem Doppelbett, einem Doppelschlafsofa, einer Küche, einer separaten Toilette und einer Außendusche. Auf dem Dach, umgeben von Baumwipfeln, befindet sich eine Terrasse, die etwa neun Meter über dem Boden liegt. Die Cottages sind um hohe, alte Bäume herum gebaut, die das gesamte Cottage vom Boden bis zur Decke durchziehen.",
+  "facilities": "Einrichtungen",
+  "fridge": "Mini-Kühlschrank",
+  "kitchen": "Küche",
+  "coffee": "Kaffeemaschine",
+  "kettle": "Elektrischer Teekessel",
+  "parking": "Parken",
+  "views": "Atemberaubende Ausblicke",
+  "heating": "Fußbodenheizung",
+  "light": "230V",
+  "wifi": "WLAN",
+  "shower": "Dusche",
+  "toilet": "Toilettenspülung",
+  "towels": "Bettwäsche & Handtücher",
+  "aboutus": "Mehr über uns",
+  "section_contact-title": "Bleib mit uns in Kontakt",
+  "section_contact-address": " Vesterborg, Dänemark",
+  "button_book_hut": "Hütte buchen",
+  "footer_title": "Newsletter",
+  "email": "E-Mail-Adresse",
+  "footer_desc": "Melden Sie sich zu unserem Newsletter für besondere Dinge an und erhalten Sie 10 % Rabatt auf Ihre nächste Bestellung.",
+  "footer_item_1": "ALLGEMEINE GESCHÄFTSBEDINGUNGEN",
+  "footer_item_2": "Widerrufsbelehrung",
+  "footer_item_3": "DATENSCHUTZERKLÄRUNG",
+  "footer_copyright": "© 2021 The Glass Huts"
+}

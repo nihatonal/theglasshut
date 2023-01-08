@@ -1,0 +1,46 @@
+.button-book-wrapper {
+  width: 383px;
+  height: 100px;
+  display: flex;
+}
+
+.button-book {
+  width: 263px;
+  height: 100px;
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-align: center;
+}
+.button-book-wrapper:hover .button-book {
+  background-color: var(--color-primary-hover);
+}
+.button-content {
+  width: 120px;
+  height: 100px;
+  padding: 22px 34px 22px 28px;
+  background-color: var(--color-secondary);
+}
+.button-content p {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-light-black);
+  display: flex;
+  flex-direction: column;
+}
+.button-content p span:nth-last-child(2) {
+  font-size: 20px;
+  line-height: 28px;
+}
+.button-content p span:nth-last-child(1) {
+  margin-left: auto;
+}

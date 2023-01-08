@@ -1,0 +1,18 @@
+.modal-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 0.7),
+    rgba(51, 51, 51, 0.7)
+  );
+  position: fixed;
+  z-index: 99;
+  left: -3000px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+}
+.showModal {
+  left: 0;
+}

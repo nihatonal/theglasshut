@@ -1,0 +1,71 @@
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/images/homepage/hero_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+  padding-top: 95px;
+  position: relative;
+}
+.hero-content {
+  width: 743px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 59px;
+}
+.hero-content-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 68px;
+  line-height: 72px;
+  text-align: right;
+}
+.hero-content-desc {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  width: 333px;
+  margin-right: 84px;
+}
+
+.hero-btn {
+  position: absolute;
+  left: 146px;
+  bottom: -36px;
+}
+
+/**/
+.carouselbar_wrapper {
+  position: relative;
+  height: 2px;
+  width: 88px;
+  background-color: red;
+  margin-left: 150px;
+}
+.carouselbar {
+  width: 15px;
+  height: px;
+  mix-blend-mode: normal;
+
+  position: relative;
+}
+.carouselbar_btn {
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  cursor: pointer;
+  z-index: 99;
+}

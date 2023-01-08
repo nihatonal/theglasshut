@@ -1,0 +1,23 @@
+/* .cabins-wrapper {
+  height: 1112px;
+} */
+.cabins-top-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 150px 0;
+}
+.cabins-top-content-info {
+  width: 465px;
+  height: 351px;
+  margin-right: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cabins-media-galery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
