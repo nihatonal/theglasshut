@@ -1,13 +1,28 @@
 .hero-container {
   width: 100%;
   height: 100vh;
-  background: url("../../assets/images/homepage/hero_1.png");
+  padding-top: 150px;
+  color: var(--color-white);
+  position: relative;
+}
+.hero-images-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hero-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: var(--color-white);
-  padding-top: 95px;
-  position: relative;
+  width: 120%;
+  height: 120%;
+  position: absolute;
 }
 .hero-content {
   width: 743px;
@@ -18,6 +33,7 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: 59px;
+  pointer-events: initial;
 }
 .hero-content-title {
   font-family: "Open Sans", sans-serif;
@@ -45,27 +61,79 @@
 }
 
 /**/
-.carouselbar_wrapper {
-  position: relative;
-  height: 2px;
-  width: 88px;
-  background-color: red;
-  margin-left: 150px;
-}
-.carouselbar {
-  width: 15px;
-  height: px;
-  mix-blend-mode: normal;
-
-  position: relative;
-}
-.carouselbar_btn {
-  width: 15px;
-  height: 2px;
+.slidebar_X-wrapper {
   position: absolute;
-  top: 0;
+  height: 1.5px;
+  width: 88px;
+  background-color: rgba(255, 255, 255, 0.28);
+  bottom: 90px;
+  right: 60px;
+}
+.slidebar_X_btn-wrapper {
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: -9px;
   left: 0;
-  background: #ffffff;
   cursor: pointer;
   z-index: 99;
+  display: flex;
+  align-items: center;
+}
+.slidebar_X_btn {
+  width: 15px;
+  height: 1.5px;
+  background: #ffffff;
+}
+
+.slidebar_Y-wrapper {
+  position: absolute;
+  width: 1.5px;
+  height: 401px;
+  background-color: rgba(255, 255, 255, 0.28);
+  bottom: 204px;
+  left: 41px;
+}
+.slidebar_Y_btn-wrapper {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  left: -24px;
+  cursor: pointer;
+}
+.slidebar_Y_btn {
+  width: 1.5px;
+  height: 60px;
+  background: #ffffff;
+  z-index: 99;
+  margin: 0 auto;
+}
+
+/*Arrows*/
+.hero-arrow-wrapper {
+  width: 113px;
+  height: 15px;
+  /* position: absolute;
+  bottom: 50px;
+  left: ; */
+  position: relative;
+  z-index: 99;
+  margin-bottom: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-arrow-btn {
+  background: none;
+  position: relative;
+  transition: all 0.3s;
+}
+.hero-arrow-btn:hover {
+  transform: translateX(10px);
+}
+
+.hero-arrow-btn:nth-last-child(2) {
+}
+.hero-arrow-btn:nth-last-child(2):hover {
+  transform: translateX(-10px);
 }
