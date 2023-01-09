@@ -42,6 +42,9 @@ input {
   outline: none;
   background: transparent;
 }
+.page-container {
+  width: 100%;
+}
 /* .section-title {
   font-family: "Open Sans";
   font-style: normal;

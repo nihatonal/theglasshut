@@ -74,5 +74,31 @@
   "footer_item_1": "TERMS AND CONDITIONS",
   "footer_item_2": "CENCELLATION POLICY",
   "footer_item_3": "PRIVACY POLICY",
-  "footer_copyright": "© 2021 The Glass Huts"
+  "footer_copyright": "© 2021 The Glass Huts",
+  "hut": "The Hut",
+  "hut_page": [
+    {
+      "section-title": "The Outside",
+      "section-option_1": "Hot tube",
+      "section-option_2": "Electric car charge",
+      "section-option_1_desc": "Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. ",
+      "section-option_2_desc": "Level 1 chargers can take 40-50 hours to charge a battery electric vehicle (BEV) from empty and 5-6 hours to charge a plug-in hybrid electric vehicle (PHEV) from empty."
+    },
+    {
+      "section-title": "The Iside",
+      "section-option_1": "Space",
+      "section-option_2": "Kitchen",
+      "section-option_3": "Bathroom",
+      "section-option_1_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "section-option_2_desc": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "section-option_3_desc": "Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32."
+    },
+    {
+      "section-title": "Practicalities",
+      "section-option_1": "Breakfast",
+      "section-option_2": "Classic Dinner",
+      "section-option_1_desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+      "section-option_2_desc": "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. "
+    }
+  ]
 }

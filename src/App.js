@@ -7,6 +7,7 @@ import MainNavigation from "./shared/navigation/MainNavigation";
 import Footer from "./shared/footer/Footer";
 
 import Home from "./Home/page/Home";
+import TheHut from "./TheHut/page/TheHut";
 
 import './App.css'
 function App() {
@@ -20,8 +21,8 @@ function App() {
             <MainNavigation />
             <Routes>
               <Route exact path="/" element={<Home />} />
-              {/* <Route exact path="/delivery/:fname" element={<Store />} />
-            <Route exact path="/delivery/:fname/:pname" element={<Store />} /> */}
+              <Route exact path="/thehut" element={<TheHut />} />
+              {/* <Route exact path="/delivery/:fname" element={<Store />} />*/}
             </Routes>
             {/* <Contact /> */}
             <Footer />
