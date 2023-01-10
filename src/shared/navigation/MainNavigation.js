@@ -1,13 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import { Text } from "../context/Language";
 import Logo from '../../assets/images/logo.png'
 import NavLinks from './NavLinks';
 import './MainNavigation.css';
 function MainNavigation(props) {
+    const location = useLocation();
+    console.log(location.pathname);
     return (
-        <div className='header-container'>
+        <div className='header-container' style={location.pathname === '/' ? { position: 'absolute' } : null}>
             <NavLink to='/'>
                 <img src={Logo} alt='logo' />
             </NavLink>

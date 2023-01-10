@@ -1,0 +1,16 @@
+.section-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.section-card-content {
+  width: 432px;
+}
+
+.section-card-content-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #5b6460;
+}
