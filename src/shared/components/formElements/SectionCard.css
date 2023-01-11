@@ -1,9 +1,15 @@
 .section-card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .section-card-content {
   width: 432px;
+  height: 478px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 67px;
 }
 
 .section-card-content-title {
@@ -13,4 +19,35 @@
   font-size: 40px;
   line-height: 40px;
   color: #5b6460;
+}
+.section-btns-wrapper {
+  height: 30px;
+  display: grid;
+  column-gap: 30px;
+  margin: 50px 0 48px;
+}
+.section-btn {
+  height: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5b6460;
+  background: none;
+}
+.section-btn:hover {
+  border-bottom: 1px solid #5b6460;
+}
+.section-btns-wrapper .active-btn {
+  border-bottom: 1px solid #5b6460;
+}
+
+.section-desc {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
 }

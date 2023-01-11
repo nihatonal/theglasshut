@@ -79,26 +79,41 @@
   "hut_page": [
     {
       "section-title": "Das Draußen",
-      "section-option_1": "Whirlpool",
-      "section-option_2": "Laden von Elektroautos",
-      "section-option_1_desc": "Die drei exklusiven und komfortablen Hütten von Løvtag, Et, Ro und Ly, wurden vom Architekten Sigurd Larsen entworfen. Sie verfügen alle über einen offenen Raum mit einem Doppelbett, einem Doppelschlafsofa, einer Küche, einer separaten Toilette und einem Außenbereich Dusche. Auf dem Dach, umgeben von Baumwipfeln, befindet sich eine Terrasse, die etwa neun Meter über dem Boden liegt.",
-      "section-option_2_desc": "Ladegeräte der Stufe 1 können 40–50 Stunden benötigen, um ein batteriebetriebenes Elektrofahrzeug (BEV) von leer aufzuladen, und 5–6 Stunden, um ein Plug-in-Hybrid-Elektrofahrzeug (PHEV) von leer aufzuladen."
+      "section-id": "außen",
+      "section-buttons": [
+        "Heiße Röhre",
+        "Elektroauto laden"
+      ],
+      "section-desc": [
+        "Die drei exklusiven und komfortablen Hütten von Løvtag, Et, Ro und Ly, wurden vom Architekten Sigurd Larsen entworfen. Sie verfügen alle über einen offenen Raum mit einem Doppelbett, einem Doppelschlafsofa, einer Küche, einer separaten Toilette und einer Außendusche. Auf dem Dach Umgeben von Baumwipfeln gibt es eine Terrasse, die etwa neun Meter über dem Boden liegt.",
+        "Ladegeräte der Stufe 1 können 40 bis 50 Stunden benötigen, um ein batteriebetriebenes Elektrofahrzeug (BEV) von leer aufzuladen, und 5 bis 6 Stunden, um ein Plug-in-Hybrid-Elektrofahrzeug (PHEV) von leer aufzuladen."
+      ]
     },
     {
-      "section-title": "Die Seite",
-      "section-option_1": "Leerzeichen",
-      "section-option_2": "Küche",
-      "section-option_3": "Badezimmer",
-      "section-option_1_desc": "Lorem Ipsum ist einfach Dummy-Text der Druck- und Setzindustrie. Lorem Ipsum ist der Standard-Dummy-Text der Industrie seit dem 15. Jahrhundert, als ein unbekannter Drucker eine Galeere von Typen nahm und daraus einen Satz machte Musterbuch.",
-      "section-option_2_desc": "Es hat nicht nur fünf Jahrhunderte überlebt, sondern auch den Sprung in den elektronischen Satz und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Bögen mit Passagen von Lorem Ipsum und in jüngerer Zeit durch Desktop-Publishing populär Software wie Aldus PageMaker einschließlich Versionen von Lorem Ipsum.",
-      "section-option_3_desc": "Lorem Ipsum stammt aus den Abschnitten 1.10.32 und 1.10.33 von 'de Finibus Bonorum et Malorum' (Die Extreme von Gut und Böse) von Cicero, geschrieben 45 v. Chr. Dieses Buch ist eine Abhandlung über die Theorie der Ethik, sehr beliebt während der Renaissance. Die erste Zeile von Lorem Ipsum, 'Lorem ipsum dolor sit amet..', stammt aus einer Zeile in Abschnitt 1.10.32."
+      "section-title": "Das Innere",
+      "section-id": "innen",
+      "section-buttons": [
+        "Platz",
+        "Küche",
+        "Badezimmer"
+      ],
+      "section-desc": [
+        "Lorem Ipsum ist einfach ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Typenmusterbuch herzustellen.",
+        "Es hat nicht nur fünf Jahrhunderte überlebt, sondern auch den Sprung in den elektronischen Satz und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren mit der Veröffentlichung von Letraset-Blättern mit Passagen von Lorem Ipsum populär und in jüngerer Zeit mit Desktop-Publishing-Software wie Aldus PageMaker einschließlich Versionen von Lorem Ipsum.",
+        "Lorem Ipsum stammt aus den Abschnitten 1.10.32 und 1.10.33 von 'de Finibus Bonorum et Malorum' (Die Extreme von Gut und Böse) von Cicero, geschrieben 45 v. Chr. Dieses Buch ist eine Abhandlung über die Theorie der Ethik, sehr beliebt während der Renaissance. Die erste Zeile von Lorem Ipsum, 'Lorem ipsum dolor sit amet..', stammt aus einer Zeile in Abschnitt 1.10.32."
+      ]
     },
     {
       "section-title": "Praktiken",
-      "section-option_1": "Frühstück",
-      "section-option_2": "Klassisches Abendessen",
-      "section-option_1_desc": "Es sind viele Variationen von Passagen von Lorem Ipsum verfügbar, aber die meisten wurden in irgendeiner Form verändert, durch eingespritzten Humor oder zufällig ausgewählte Wörter, die nicht einmal annähernd glaubwürdig aussehen.",
-      "section-option_2_desc": "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass nichts Peinliches in der Mitte des Textes versteckt ist. Alle Lorem-Ipsum-Generatoren im Internet neigen dazu, vordefinierte Abschnitte zu wiederholen wie nötig, was dies zum ersten echten Generator im Internet macht."
+      "section-id": "Praktiken",
+      "section-buttons": [
+        "Frühstück",
+        "Klassisches Abendessen"
+      ],
+      "section-desc": [
+        "Es gibt viele Variationen von Passagen von Lorem Ipsum, aber die meisten wurden in irgendeiner Form verändert, durch eingespritzten Humor oder zufällige Wörter, die nicht einmal annähernd glaubwürdig aussehen.",
+        "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass sich mitten im Text nichts Peinliches versteckt erster echter Generator im Internet."
+      ]
     }
   ]
 }

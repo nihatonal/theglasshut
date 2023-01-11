@@ -79,26 +79,41 @@
   "hut_page": [
     {
       "section-title": "Ydersiden",
-      "section-option_1": "Hot tube",
-      "section-option_2": "Opladning af elbil",
-      "section-option_1_desc": "Løvtags tre eksklusive og komfortable hytter, Et, Ro og Ly, er tegnet af arkitekt Sigurd Larsen. De har alle et åbent rum med dobbeltseng, dobbelt sovesofa, køkken, separat toilet og udendørs bruser. På taget, omgivet af trætoppe, er der en terrasse, som er omkring ni meter over jorden.",
-      "section-option_2_desc": "Niveau 1-opladere kan tage 40-50 timer at oplade et elektrisk batteri (BEV) fra tomt og 5-6 timer at oplade et plug-in hybrid elektrisk køretøj (PHEV) fra tomt."
+      "section-id": "udenfor",
+      "section-buttons": [
+        "Hot tube",
+        "Elbil opladning"
+      ],
+      "section-desc": [
+        "Løvtags tre eksklusive og komfortable hytter, Et, Ro og Ly, er tegnet af arkitekt Sigurd Larsen. De har alle et åbent rum med dobbeltseng, dobbelt sovesofa, køkken, separat toilet og udendørs bruser. På taget, omgivet af trætoppe er der en terrasse, som er omkring ni meter over jorden.",
+        "Niveau 1-opladere kan tage 40-50 timer at oplade et batterielektrisk køretøj (BEV) fra tomt og 5-6 timer at oplade et plug-in hybrid-elkøretøj (PHEV) fra tomt."
+      ]
     },
     {
-      "section-title": "Siden",
-      "section-option_1": "Mellemrum",
-      "section-option_2": "Køkken",
-      "section-option_3": "Badeværelse",
-      "section-option_1_desc": "Lorem Ipsum er simpelthen dummy-tekst fra trykkeri- og sætningsindustrien. Lorem Ipsum har været branchens standard dummy-tekst lige siden 1500-tallet, hvor en ukendt printer tog en kabys af skrift og forvandlede den for at lave en skrift prøvebog.",
-      "section-option_2_desc": "Den har overlevet ikke kun fem århundreder, men også springet til elektronisk sætning, forbliver i det væsentlige uændret. Den blev populær i 1960'erne med udgivelsen af ​​Letraset-ark indeholdende Lorem Ipsum-passager og for nylig med desktop publishing software som Aldus PageMaker inklusive versioner af Lorem Ipsum.",
-      "section-option_3_desc": "Lorem Ipsum kommer fra afsnit 1.10.32 og 1.10.33 af 'de Finibus Bonorum et Malorum' (Ekstremerne af godt og ondt) af Cicero, skrevet i 45 f.Kr.. Denne bog er en afhandling om teori om etik, meget populær under renæssancen. Den første linje i Lorem Ipsum, 'Lorem ipsum dolor sit amet..', kommer fra en linje i afsnit 1.10.32."
+      "section-title": "Indersiden",
+      "section-id": "inde i",
+      "section-buttons": [
+        "Plads",
+        "Køkken",
+        "Badeværelse"
+      ],
+      "section-desc": [
+        "Lorem Ipsum er simpelthen dummy-tekst fra trykkeri- og sætningsindustrien. Lorem Ipsum har været branchens standard dummy-tekst lige siden 1500-tallet, hvor en ukendt printer tog en kabys af type og forvandlede den for at lave en typeprøvebog.",
+        "Det har overlevet ikke kun fem århundreder, men også springet ind i elektronisk sætning, forbliver stort set uændret. Det blev populært i 1960'erne med udgivelsen af Letraset-ark indeholdende Lorem Ipsum-passager og for nylig med desktop publishing-software som Aldus PageMaker inklusive versioner af Lorem Ipsum.",
+        "Lorem Ipsum kommer fra afsnit 1.10.32 og 1.10.33 i 'de Finibus Bonorum et Malorum' (Ekstremerne af godt og ondt) af Cicero, skrevet i 45 f.Kr.. Denne bog er en afhandling om teorien om etik, meget populær under renæssancen. Den første linje i Lorem Ipsum, 'Lorem ipsum dolor sit amet..', kommer fra en linje i afsnit 1.10.32."
+      ]
     },
     {
       "section-title": "Praktiske forhold",
-      "section-option_1": "Morgenmad",
-      "section-option_2": "Klassisk middag",
-      "section-option_1_desc": "Der er mange varianter af passager af Lorem Ipsum tilgængelige, men størstedelen har lidt ændringer i en eller anden form, af indsprøjtet humor eller randomiserede ord, som ikke ser engang lidt troværdige ud.",
-      "section-option_2_desc": "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af ​​teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til den første rigtige generator på internettet."
+      "section-id": "praktisk",
+      "section-buttons": [
+        "Morgenmad",
+        "Klassisk middag"
+      ],
+      "section-desc": [
+        "Der er mange variationer af passager af Lorem Ipsum tilgængelige, men størstedelen har lidt ændringer i en eller anden form, af indsprøjtet humor eller randomiserede ord, som ikke ser engang en smule troværdige ud.",
+        "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
+      ]
     }
   ]
 }

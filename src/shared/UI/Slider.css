@@ -38,9 +38,6 @@
 .slide-arrow-btn:hover {
   transform: translateX(10px);
 }
-.slide-arrow-btn svg path {
-  stroke: var(--color-light-black);
-}
 .disable svg path {
   stroke: #dadada;
 }
