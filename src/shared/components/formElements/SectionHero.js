@@ -6,7 +6,7 @@ function SectionHero(props) {
         <div className='section-hero-container'>
             <div className="section-hero-content">
                 <h2 className="section-hero-title">{props.title}</h2>
-                {props.childred}
+                {props.content}
             </div>
             <div className="section-wrapper">
                 <div className="section-wrapper-filter"></div>

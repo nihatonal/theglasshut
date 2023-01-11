@@ -36,13 +36,13 @@
   transition: all 0.3s;
 }
 .slide-arrow-btn:hover {
-  transform: translateX(10px);
+  transform: translateX(-5px);
 }
 .disable svg path {
   stroke: #dadada;
 }
 .slide-arrow-btn:nth-last-child(2):hover {
-  transform: translateX(-10px);
+  transform: translateX(5px);
 }
 /* slide bar*/
 .slide_bar {

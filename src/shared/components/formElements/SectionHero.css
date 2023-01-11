@@ -11,6 +11,9 @@
   z-index: 15;
   margin-top: 67px;
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-hero-title {
   font-family: "Open Sans", sans-serif;
@@ -20,6 +23,7 @@
   line-height: 72px;
   text-align: center;
   color: #ffffff;
+  width: 150%;
 }
 
 .section-wrapper {

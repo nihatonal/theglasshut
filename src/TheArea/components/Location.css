@@ -1,0 +1,26 @@
+.location-wrapper {
+  width: 100%;
+  height: 517px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-wrapper img {
+  width: 100%;
+  height: 517px;
+  position: absolute;
+}
+.location-filter {
+  background: #3e443e;
+  opacity: 0.4;
+  height: 517px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.location-wrapper .forest-location-wrapper {
+  position: relative;
+  z-index: 99;
+}
+

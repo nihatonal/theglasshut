@@ -25,7 +25,7 @@ function TheHut() {
         setPracticalities(e.target.id.slice(-1) - 1)
     }
     return (
-        <div className='page-container'>
+        <div className='page-container hut-wrapper'>
             <SectionHero
                 image={background}
                 title={lang.dictionary["hut"]}

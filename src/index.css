@@ -34,6 +34,11 @@ button {
   transition: all 0.3s;
   cursor: pointer;
 }
+.page-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 150px;
+}
 .section-container {
   width: 100%;
 }

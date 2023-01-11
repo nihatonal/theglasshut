@@ -115,5 +115,71 @@
         "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass sich mitten im Text nichts Peinliches versteckt erster echter Generator im Internet."
       ]
     }
+  ],
+  "area": "Der Bereich",
+  "area-name": "Vesterborg, Dänemark",
+  "area-nav": "Route berechnen",
+  "area-map-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
+  "vesterborg": "Vesterborg",
+  "copenhagen": "Kopenhagen",
+  "activities": "Aktivitäten",
+  "area_page": [
+    {
+      "section-title": "Vesterborg",
+      "section-subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
+      "section-id": "Vesterborg",
+      "section-buttons": [],
+      "section-desc": [
+        "Die drei exklusiven und komfortablen Hütten von Løvtag, Et, Ro und Ly, wurden vom Architekten Sigurd Larsen entworfen. Sie verfügen alle über einen offenen Raum mit einem Doppelbett, einem Doppelschlafsofa, einer Küche, einer separaten Toilette und einer Außendusche. Auf dem Dach Umgeben von Baumwipfeln gibt es eine Terrasse, die sich etwa neun Meter über dem Boden befindet."
+      ]
+    },
+    {
+      "section-title": "Restaurants & Shopping",
+      "section-id": "Restaurants",
+      "section-buttons": [
+        "Restaurants",
+        "Shops"
+      ],
+      "section-desc": [
+        "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche.",
+        "Es hat nicht nur fünf Jahrhunderte überlebt, sondern auch den Sprung in den elektronischen Satz und ist im Wesentlichen unverändert geblieben. Es wurde in den 1960er Jahren populär mit."
+      ]
+    },
+    {
+      "section-title": "Naturerlebnisse",
+      "section-id": "Erfahrungen",
+      "section-buttons": [
+        "Lorem Impus",
+        "Lorem Impus"
+      ],
+      "section-desc": [
+        "Es gibt viele Variationen von Passagen von Lorem Ipsum, aber die meisten wurden in irgendeiner Form verändert, durch eingespritzten Humor oder zufällige Wörter, die nicht einmal annähernd glaubwürdig aussehen.",
+        "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass sich mitten im Text nichts Peinliches versteckt erster echter Generator im Internet."
+      ]
+    },
+    {
+      "section-title": "Fahren gehen",
+      "section-id": "goforadrive",
+      "section-buttons": [
+        "Lorem Impus",
+        "Lorem Impus"
+      ],
+      "section-desc": [
+        "Es gibt viele Variationen von Passagen von Lorem Ipsum, aber die meisten wurden in irgendeiner Form verändert, durch eingespritzten Humor oder zufällige Wörter, die nicht einmal annähernd glaubwürdig aussehen.",
+        "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass sich mitten im Text nichts Peinliches versteckt erster echter Generator im Internet."
+      ]
+    },
+    {
+      "section-title": "Kleinstadtcharme",
+      "section-id": "Kleinstadtcharme",
+      "section-buttons": [
+        "Lorem Impus",
+        "Lorem Impus"
+      ],
+      "section-desc": [
+        "Es gibt viele Variationen von Passagen von Lorem Ipsum, aber die meisten wurden in irgendeiner Form verändert, durch eingespritzten Humor oder zufällige Wörter, die nicht einmal annähernd glaubwürdig aussehen.",
+        "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass sich mitten im Text nichts Peinliches versteckt erster echter Generator im Internet."
+      ]
+    }
   ]
 }
