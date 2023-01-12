@@ -5,6 +5,7 @@ import { LanguageProvider } from "./shared/context/Language";
 import CartProvider from './shared/context/CartContext';
 import MainNavigation from "./shared/navigation/MainNavigation";
 import Footer from "./shared/footer/Footer";
+import ScrollButton from "./shared/UI/ScrollButton";
 
 import Home from "./Home/page/Home";
 import TheHut from "./TheHut/page/TheHut";
@@ -28,6 +29,7 @@ function App() {
             </Routes>
             {/* <Contact /> */}
             <Footer />
+            <ScrollButton />
           </BrowserRouter>
         </CartProvider>
       </LanguageProvider>
