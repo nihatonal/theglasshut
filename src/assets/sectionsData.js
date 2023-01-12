@@ -144,6 +144,20 @@ export const sectionsData =
         {
             'image': require('./images/area/smalltown/town_4.jpg')
         },
+    ],
+    aboutus: [
+        {
+            'image': require('./images/aboutus/black_image.png')
+        },
+        {
+            'image': require('./images/aboutus/nature_panaroma.png')
+        },
+        {
+            'image': require('./images/aboutus/art.png')
+        },
+        {
+            'image': require('./images/aboutus/tube.png')
+        },
     ]
 }
 

@@ -67,39 +67,6 @@ function TheArea(props) {
                     desc={item['section-desc']}
                 />
             )}
-            {/* <SectionCard
-                title_content={<h2 className="activities">{lang.dictionary["activities"]}</h2>}
-                slides={sectionsData.outside}
-                title={sectionData[1]['section-title']}
-                buttons={sectionData[1]['section-buttons']}
-                desc={sectionData[1]['section-desc'][restoran]}
-                onClick={restoranHandler}
-                isActive={restoran}
-            />
-            <SectionCard
-                slides={sectionsData.outside}
-                title={sectionData[2]['section-title']}
-                buttons={sectionData[2]['section-buttons']}
-                desc={sectionData[2]['section-desc'][experience]}
-                onClick={experienceHandler}
-                isActive={experience}
-            />
-            <SectionCard
-                slides={sectionsData.outside}
-                title={sectionData[3]['section-title']}
-                buttons={sectionData[3]['section-buttons']}
-                desc={sectionData[3]['section-desc'][drive]}
-                onClick={driveHandler}
-                isActive={drive}
-            />
-            <SectionCard
-                slides={sectionsData.outside}
-                title={sectionData[4]['section-title']}
-                buttons={sectionData[4]['section-buttons']}
-                desc={sectionData[4]['section-desc'][town]}
-                onClick={townHandler}
-                isActive={town}
-            /> */}
             <Location />
 
 

@@ -154,7 +154,7 @@
       ],
       "section-desc": [
         "Der er mange variationer af passager af Lorem Ipsum tilgængelige, men størstedelen har lidt ændringer i en eller anden form, af indsprøjtet humor eller randomiserede ord, som ikke ser engang en smule troværdige ud.",
-         "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
+        "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
       ]
     },
     {
@@ -166,7 +166,7 @@
       ],
       "section-desc": [
         "Der er mange variationer af passager af Lorem Ipsum tilgængelige, men størstedelen har lidt ændringer i en eller anden form, af indsprøjtet humor eller randomiserede ord, som ikke ser engang en smule troværdige ud.",
-         "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
+        "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
       ]
     },
     {
@@ -178,8 +178,15 @@
       ],
       "section-desc": [
         "Der er mange variationer af passager af Lorem Ipsum tilgængelige, men størstedelen har lidt ændringer i en eller anden form, af indsprøjtet humor eller randomiserede ord, som ikke ser engang en smule troværdige ud.",
-         "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
+        "Hvis du skal bruge en passage af Lorem Ipsum, skal du være sikker på, at der ikke er noget pinligt gemt i midten af teksten. Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage foruddefinerede bidder efter behov, hvilket gør dette til første rigtige generator på internettet."
       ]
     }
-  ]
+  ],
+  "about_us": "Om os",
+  "contact_us": "kontakt os",
+  "read_faq": "læs faq",
+  "about_us_section_title": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+  "about_us_section_desc": "Sed ut perspiciatis unde omnis iste natus fejl sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta dicta qui quiaut enimbosam situ au explica di periam. fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+  "about_us_section_galery": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
+  "about_us_image_desc": "Lorem ipsum dolor sit amet, konsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }

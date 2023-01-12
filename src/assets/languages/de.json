@@ -181,5 +181,12 @@
         "Wenn Sie eine Passage von Lorem Ipsum verwenden, müssen Sie sicher sein, dass sich mitten im Text nichts Peinliches versteckt erster echter Generator im Internet."
       ]
     }
-  ]
+  ],
+  "about_us": "Über uns",
+  "contact_us": "kontaktiere uns",
+  "read_faq": "FAQ lesen",
+  "about_us_section_title": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
+  "about_us_section_desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta aut sit aut as diperiam fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+  "about_us_section_galery": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
+  "about_us_image_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
