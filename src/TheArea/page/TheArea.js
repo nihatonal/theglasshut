@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 
 import { LanguageContext } from "../../shared/context/Language";
 import background from '../../assets/images/area/hero.png';
@@ -23,30 +23,17 @@ function TheArea(props) {
             className="hero-link"
             target='_blank'
             rel='noreferrer'>
-            <MdLocationOn className='location-icon'/>{lang.dictionary["area-name"]}
+            <MdLocationOn className='location-icon' />{lang.dictionary["area-name"]}
         </a>
         <button className='area-nav-btn'>{lang.dictionary["area-nav"]}</button>
     </div>
 
-
-    const [restoran, setRestoran] = useState(0);
-    const [experience, setExperience] = useState(0);
-    const [drive, setDrive] = useState(0);
-    const [town, setTown] = useState(0);
-
-
-    const restoranHandler = (e) => {
-        setRestoran(e.target.id.slice(-1) - 1)
-    }
-    const experienceHandler = (e) => {
-        setExperience(e.target.id.slice(-1) - 1)
-    }
-    const driveHandler = (e) => {
-        setDrive(e.target.id.slice(-1) - 1)
-    }
-    const townHandler = (e) => {
-        setTown(e.target.id.slice(-1) - 1)
-    }
+    const filteredData = (x) => Object.keys(sectionsData)
+        .filter(key => x.includes(key))
+        .reduce((obj, key) => {
+            obj[key] = sectionsData[key];
+            return obj;
+        }, {});
 
     return (
         <div className='page-container area-wrapper'>
@@ -56,7 +43,7 @@ function TheArea(props) {
                 content={content}
             />
             <SectionCard
-                slides={sectionsData.outside}
+                slides={sectionsData.vesterborg}
                 title={sectionData[0]['section-title']}
                 buttons={sectionData[0]['section-buttons']}
                 desc={sectionData[0]['section-desc']}
@@ -70,7 +57,17 @@ function TheArea(props) {
                 copenhagen={lang.dictionary["copenhagen"]}
             />
             {/*  */}
-            <SectionCard
+            {sectionData.slice(1).map((item) =>
+                <SectionCard
+                    title_content={<h2 className="activities">{lang.dictionary["activities"]}</h2>}
+                    key={item['section-id']}
+                    slides={filteredData(item['section-id'])[item['section-id']]}
+                    title={item['section-title']}
+                    buttons={item['section-buttons']}
+                    desc={item['section-desc']}
+                />
+            )}
+            {/* <SectionCard
                 title_content={<h2 className="activities">{lang.dictionary["activities"]}</h2>}
                 slides={sectionsData.outside}
                 title={sectionData[1]['section-title']}
@@ -102,7 +99,7 @@ function TheArea(props) {
                 desc={sectionData[4]['section-desc'][town]}
                 onClick={townHandler}
                 isActive={town}
-            />
+            /> */}
             <Location />
 
 

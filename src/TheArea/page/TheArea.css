@@ -56,6 +56,7 @@
   grid-column: 1;
   grid-row: 2;
 }
+
 .activities {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -64,7 +65,13 @@
   line-height: 56px;
   color: #5b6460;
 }
+
 .area-wrapper .section-card-container:nth-last-child(2) .section-card-content,
 .area-wrapper .section-card-container:nth-last-child(4) .section-card-content {
   order: -1;
+}
+.area-wrapper .section-card-container:nth-last-child(2) .activities,
+.area-wrapper .section-card-container:nth-last-child(4) .activities,
+.area-wrapper .section-card-container:nth-last-child(3) .activities {
+  display: none;
 }

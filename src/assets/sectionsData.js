@@ -58,6 +58,92 @@ export const sectionsData =
             'image': require('./images/thehut/practicalities/breakfast_1.png')
         },
 
+    ],
+    vesterborg: [
+        {
+            'image': require('./images/area/vesterborg/vesterborg_1.png')
+        },
+        {
+            'image': require('./images/area/vesterborg/vesterborg_2.jpg')
+        },
+        {
+            'image': require('./images/area/vesterborg/vesterborg_3.jpg')
+        },
+        {
+            'image': require('./images/area/vesterborg/vesterborg_4.jpg')
+        },
+        {
+            'image': require('./images/area/vesterborg/vesterborg_5.jpg')
+        },
+
+    ],
+    restaurants: [
+        {
+            'image': require('./images/area/restaurant/restaurant_1.png')
+        },
+        {
+            'image': require('./images/area/restaurant/restaurant_2.jpg')
+        },
+        {
+            'image': require('./images/area/restaurant/restaurant_3.jpeg')
+        },
+        {
+            'image': require('./images/area/restaurant/restaurant_4.png')
+        },
+        {
+            'image': require('./images/area/restaurant/restaurant_5.png')
+        },
+    ],
+    experiences: [
+        {
+            'image': require('./images/area/nature/nature_1.png')
+        },
+        {
+            'image': require('./images/area/nature/nature_2.png')
+        },
+        {
+            'image': require('./images/area/nature/nature_3.png')
+        },
+        {
+            'image': require('./images/area/nature/nature_4.png')
+        },
+        {
+            'image': require('./images/area/nature/nature_5.png')
+        },
+    ],
+    goforadrive: [
+        {
+            'image': require('./images/area/gofordrive/gofordrive_1.png')
+        },
+        {
+            'image': require('./images/area/gofordrive/gofordrive_2.png')
+        },
+        {
+            'image': require('./images/area/gofordrive/gofordrive_3.png')
+        },
+        {
+            'image': require('./images/area/gofordrive/gofordrive_4.png')
+        },
+        {
+            'image': require('./images/area/gofordrive/gofordrive_5.png')
+        },
+    ],
+    smalltowncharm: [
+        {
+            'image': require('./images/area/smalltown/town_1.png')
+        },
+        {
+            'image': require('./images/area/smalltown/town_2.jpg')
+        },
+        {
+            'image': require('./images/area/smalltown/town_3.jpg')
+        },
+        {
+            'image': require('./images/area/smalltown/town_3.png')
+        },
+        {
+            'image': require('./images/area/smalltown/town_4.jpg')
+        },
     ]
 }
 

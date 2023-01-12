@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { LanguageContext } from "../../shared/context/Language";
 import background from '../../assets/images/thehut/hero.png';
 
@@ -11,54 +11,28 @@ function TheHut() {
     const lang = useContext(LanguageContext);
 
     const sectionData = lang.dictionary["hut_page"];
-    const [outside, setOutside] = useState(0);
-    const [inside, setInside] = useState(0);
-    const [practicalities, setPracticalities] = useState(0);
 
-    const insideHandler = (e) => {
-        setInside(e.target.id.slice(-1) - 1)
-    }
-    const outsideHandler = (e) => {
-        setOutside(e.target.id.slice(-1) - 1)
-    }
-    const practicalitiesHandler = (e) => {
-        setPracticalities(e.target.id.slice(-1) - 1)
-    }
+    const filteredData = (x) => Object.keys(sectionsData)
+        .filter(key => x.includes(key))
+        .reduce((obj, key) => {
+            obj[key] = sectionsData[key];
+            return obj;
+        }, {});
     return (
         <div className='page-container hut-wrapper'>
             <SectionHero
                 image={background}
                 title={lang.dictionary["hut"]}
             />
-            <SectionCard
-                slides={sectionsData.outside}
-
-                title={sectionData[0]['section-title']}
-                buttons={sectionData[0]['section-buttons']}
-                desc={sectionData[0]['section-desc'][outside]}
-                onClick={outsideHandler}
-                isActive={outside}
-            />
-            <SectionCard
-                slides={sectionsData.inside}
-
-                title={sectionData[1]['section-title']}
-                buttons={sectionData[1]['section-buttons']}
-                desc={sectionData[1]['section-desc'][inside]}
-                onClick={insideHandler}
-                isActive={inside}
-            />
-            <SectionCard
-                slides={sectionsData.practicalities}
-
-                title={sectionData[2]['section-title']}
-                buttons={sectionData[2]['section-buttons']}
-                desc={sectionData[2]['section-desc'][practicalities]}
-                onClick={practicalitiesHandler}
-                isActive={practicalities}
-            />
-
-
+            {sectionData.map((item) =>
+                <SectionCard
+                    key={item['section-id']}
+                    slides={filteredData(item['section-id'])[item['section-id']]}
+                    title={item['section-title']}
+                    buttons={item['section-buttons']}
+                    desc={item['section-desc']}
+                />
+            )}
         </div>
     );
 }
