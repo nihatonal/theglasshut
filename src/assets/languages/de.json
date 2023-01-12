@@ -79,7 +79,7 @@
   "hut_page": [
     {
       "section-title": "Das Draußen",
-      "section-id": "außen",
+      "section-id": "outside",
       "section-buttons": [
         "Heiße Röhre",
         "Elektroauto laden"
@@ -91,7 +91,7 @@
     },
     {
       "section-title": "Das Innere",
-      "section-id": "innen",
+      "section-id": "inside",
       "section-buttons": [
         "Platz",
         "Küche",
@@ -105,7 +105,7 @@
     },
     {
       "section-title": "Praktiken",
-      "section-id": "Praktiken",
+      "section-id": "practicalities",
       "section-buttons": [
         "Frühstück",
         "Klassisches Abendessen"
@@ -127,7 +127,7 @@
     {
       "section-title": "Vesterborg",
       "section-subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
-      "section-id": "Vesterborg",
+      "section-id": "vesterborg",
       "section-buttons": [],
       "section-desc": [
         "Die drei exklusiven und komfortablen Hütten von Løvtag, Et, Ro und Ly, wurden vom Architekten Sigurd Larsen entworfen. Sie verfügen alle über einen offenen Raum mit einem Doppelbett, einem Doppelschlafsofa, einer Küche, einer separaten Toilette und einer Außendusche. Auf dem Dach Umgeben von Baumwipfeln gibt es eine Terrasse, die sich etwa neun Meter über dem Boden befindet."
@@ -135,7 +135,7 @@
     },
     {
       "section-title": "Restaurants & Shopping",
-      "section-id": "Restaurants",
+      "section-id": "restaurants",
       "section-buttons": [
         "Restaurants",
         "Shops"
@@ -147,7 +147,7 @@
     },
     {
       "section-title": "Naturerlebnisse",
-      "section-id": "Erfahrungen",
+      "section-id": "experiences",
       "section-buttons": [
         "Lorem Impus",
         "Lorem Impus"
@@ -171,7 +171,7 @@
     },
     {
       "section-title": "Kleinstadtcharme",
-      "section-id": "Kleinstadtcharme",
+      "section-id": "smalltowncharm",
       "section-buttons": [
         "Lorem Impus",
         "Lorem Impus"

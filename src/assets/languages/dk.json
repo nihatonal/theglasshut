@@ -79,7 +79,7 @@
   "hut_page": [
     {
       "section-title": "Ydersiden",
-      "section-id": "udenfor",
+      "section-id": "outside",
       "section-buttons": [
         "Hot tube",
         "Elbil opladning"
@@ -91,7 +91,7 @@
     },
     {
       "section-title": "Indersiden",
-      "section-id": "inde i",
+      "section-id": "inside",
       "section-buttons": [
         "Plads",
         "Køkken",
@@ -105,7 +105,7 @@
     },
     {
       "section-title": "Praktiske forhold",
-      "section-id": "praktisk",
+      "section-id": "practicalities",
       "section-buttons": [
         "Morgenmad",
         "Klassisk middag"
@@ -135,7 +135,7 @@
     },
     {
       "section-title": "Restauranter og shopping",
-      "section-id": "restauranter",
+      "section-id": "restaurants",
       "section-buttons": [
         "Restauranter",
         "Butikker"
@@ -147,7 +147,7 @@
     },
     {
       "section-title": "Oplevelser i naturen",
-      "section-id": "oplevelser",
+      "section-id": "experiences",
       "section-buttons": [
         "Lorem Impus",
         "Lorem Impus"
