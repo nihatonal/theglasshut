@@ -188,5 +188,23 @@
   "about_us_section_title": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
   "about_us_section_desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta aut sit aut as diperiam fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   "about_us_section_galery": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
-  "about_us_image_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "about_us_image_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "form_element": [
+    {
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "Email",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Senden"
+    },
+    {
+      "error_fname": "Bitte geben Sie Ihren Namen ein.",
+      "error_lname": "Bitte geben Sie Ihren Nachnamen ein.",
+      "error_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "error_subject": "Bitte geben Sie einen Betreff ein.",
+      "error_textarea": "Ihre Nachricht muss länger als 100 Zeichen sein."
+    }
+  ],
+  "heart-text": "Aus Dänemark, mit Liebe..."
 }

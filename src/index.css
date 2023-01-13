@@ -5,6 +5,14 @@
     url("../src/assets/DIN/DIN-Light.ttf") format("light"),
     url("../src/assets/DIN/DIN-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Handlee";
+  src: url("../src/assets/Handlee/Handlee-Regular.ttf");
+  src: url("../src/assets/Handlee/Handlee-Regular.ttf")
+      format("embedded-opentype"),
+    url("../src/assets/Handlee/Handlee-Regular.ttf") format("light"),
+    url("../src/assets/Handlee/Handlee-Regular.ttf") format("truetype");
+}
 
 :root {
   --color-black: #000;

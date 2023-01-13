@@ -3,7 +3,6 @@ import React from 'react';
 import './ImageGallery.css';
 function ImageGallery(props) {
     const { title, image_content, images } = props;
-    console.log(images)
     return (
         <div className='images-container'>
             <h2 className="images-title">{title}</h2>

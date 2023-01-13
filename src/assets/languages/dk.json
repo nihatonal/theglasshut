@@ -188,5 +188,23 @@
   "about_us_section_title": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”",
   "about_us_section_desc": "Sed ut perspiciatis unde omnis iste natus fejl sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta dicta qui quiaut enimbosam situ au explica di periam. fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   "about_us_section_galery": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
-  "about_us_image_desc": "Lorem ipsum dolor sit amet, konsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "about_us_image_desc": "Lorem ipsum dolor sit amet, konsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "form_element": [
+    {
+      "first_name": "Fornavn",
+      "last_name": "Efternavn",
+      "email": "E-mail",
+      "subject": "Emne",
+      "message": "Besked",
+      "send": "Send"
+    },
+    {
+      "error_fname": "Indtast venligst dit navn.",
+      "error_lname": "Indtast venligst dit efternavn.",
+      "error_email": "Indtast venligst en gyldig e-mail.",
+      "error_subject": "Indtast venligst et emne.",
+      "error_textarea": "Din besked skal være længere end 100 tegn."
+    }
+  ],
+  "heart-text": "Fra Danmark, med kærlighed..."
 }

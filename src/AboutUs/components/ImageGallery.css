@@ -12,15 +12,13 @@
   color: #5b6460;
   width: 537px;
   height: 112px;
+  margin-bottom: 100px;
 }
 .images-wrapper {
-  width: 100%;
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: auto auto auto;
-  padding: 0 33px;
-  align-items: center; */
 }
 .images-wrapper img {
   margin: 15px;

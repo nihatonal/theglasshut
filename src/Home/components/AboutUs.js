@@ -10,11 +10,11 @@ function AboutUs(props) {
                 <div className="aboutus-bg-item"></div>
                 <div className="aboutus-bg-item"></div>
             </div>
-            <div className="aboutus-btn-wrapper">
+            {/* <div className="aboutus-btn-wrapper"> */}
                 <NavLink to='/aboutus' className="aboutus-btn">
                     <Text tid="aboutus" />
                 </NavLink>
-            </div>
+            {/* </div> */}
         </div>
     );
 }

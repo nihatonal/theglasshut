@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from '../../UI/Slider';
+import Slider from '../UI/Slider';
 import './SectionCard.css';
 function SectionCard(props) {
     const [desc, setDesc] = useState(0);

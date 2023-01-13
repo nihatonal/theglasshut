@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { LanguageContext } from "../../shared/context/Language";
 import background from '../../assets/images/thehut/hero.png';
 
-import SectionHero from '../../shared/components/formElements/SectionHero';
-import SectionCard from '../../shared/components/formElements/SectionCard';
+import SectionHero from '../../shared/components/SectionHero';
+import SectionCard from '../../shared/components/SectionCard';
 import { sectionsData } from '../../assets/sectionsData';
 import './TheHut.css';
 

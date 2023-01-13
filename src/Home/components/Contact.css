@@ -1,49 +1,7 @@
-.contact-container {
-  height: 617px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contact-wrapper {
-  width: 1116px;
-  height: 334px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.contact-image-wrapper {
-  width: 386px;
-  height: 288px;
-  display: flex;
-  flex-direction: column;
-}
 .contact-btn {
   width: 100%;
   justify-content: space-between;
 }
 .contact-btn .button-book {
   width: 266px;
-}
-.contact-content {
-  width: 385px;
-  height: 317px;
-}
-.contact-content .home-section-title {
-  width: 450px;
-}
-.contact-item {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-  display: block;
-}
-.contact-item:nth-child(2) {
-  margin: 50px 0 20px;
-}
-.contact-item:nth-child(4) {
-  margin-bottom: 50px;
 }

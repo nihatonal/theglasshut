@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Text, LanguageContext } from "../../shared/context/Language";
-import SectionHero from '../../shared/components/formElements/SectionHero';
+import SectionHero from '../../shared/components/SectionHero';
 import ImageGallery from '../components/ImageGallery';
+import StayInTouch from '../../shared/components/StayInTouch';
+import ContactForm from '../components/ContactForm';
 import { sectionsData } from '../../assets/sectionsData';
 
+
 import background from '../../assets/images/aboutus/hero.png';
-import section_image_1 from '../../assets/images/aboutus/aboutus_1.png'
+import section_image_1 from '../../assets/images/aboutus/aboutus_1.png';
+import hearth from '../../assets/icons/hearth.png';
 
 import './AboutUs.css';
 function AboutUs(props) {
@@ -37,6 +41,16 @@ function AboutUs(props) {
                 images={sectionsData.aboutus}
                 image_content={lang.dictionary["about_us_image_desc"]}
             />
+            <div className="about_us-contact-section">
+                <StayInTouch>
+                    <ContactForm />
+                </StayInTouch>
+                <div className="heart-icon-wrapper">
+                    <p><Text tid='heart-text' /></p>
+                    <img src={hearth} alt="hearth" />
+                </div>
+            </div>
+
         </div>
     );
 }

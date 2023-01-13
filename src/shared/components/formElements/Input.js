@@ -54,8 +54,8 @@ const Input = props => {
     props.element === 'input' ? (
       <input
         id={props.id}
+        style={inputState.value !== '' ? { paddingTop: '12px' } : null}
         type={props.type}
-        placeholder={!inputState.isValid && inputState.isTouched ? props.errorText : props.placeholder}
         onChange={changeHandler}
         onBlur={touchHandler}
         value={inputState.value}
@@ -63,6 +63,7 @@ const Input = props => {
     ) : (
       <textarea
         id={props.id}
+        style={inputState.value.length !== '' ? { paddingTop: '22px' } : null}
         rows={props.rows || 3}
         onChange={changeHandler}
         onBlur={touchHandler}
@@ -77,9 +78,19 @@ const Input = props => {
         'form-control--invalid'}`}
     >
       <label htmlFor={props.id}>{props.label}</label>
+
       {element}
-      {/* {!inputState.isValid && inputState.isTouched && <p>{props.errorText}</p>} */}
-    </div>
+      {
+        <p className={
+          inputState.value !== '' ? 'placeholder placeholder-touched' :
+            inputState.isTouched && !inputState.isValid ? `placeholder placeholder-touched` : `placeholder`
+        }
+        >
+          {inputState.isTouched && !inputState.isValid ? props.error_Text : props.custom_placeholder
+          }
+        </p>
+      }
+    </div >
   );
 };
 

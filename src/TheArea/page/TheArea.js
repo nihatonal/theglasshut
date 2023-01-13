@@ -4,8 +4,8 @@ import { LanguageContext } from "../../shared/context/Language";
 import background from '../../assets/images/area/hero.png';
 
 
-import SectionHero from '../../shared/components/formElements/SectionHero';
-import SectionCard from '../../shared/components/formElements/SectionCard';
+import SectionHero from '../../shared/components/SectionHero';
+import SectionCard from '../../shared/components/SectionCard';
 import Map from '../components/Map';
 import Location from '../components/Location';
 import { sectionsData } from '../../assets/sectionsData';
