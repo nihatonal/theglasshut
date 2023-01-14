@@ -12,8 +12,8 @@
   font-size: 2rem;
   z-index: 1;
   cursor: pointer;
-  background: rgba(90, 99, 95, 0.5);
-  box-shadow: 0 0
+  background: #5a635f80;
+  box-shadow: 0 0 15px #000;
 }
 .scroll-btn:hover {
   background: rgba(90, 99, 95, 1);

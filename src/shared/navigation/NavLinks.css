@@ -14,7 +14,11 @@
   line-height: 24px;
   text-transform: uppercase;
   color: var(--color-black);
+  text-underline-offset: 0.3em;
 }
 .nav-item:hover {
+  text-decoration: underline;
+}
+.active-nav-item {
   text-decoration: underline;
 }

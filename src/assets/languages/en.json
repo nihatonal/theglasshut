@@ -206,5 +206,52 @@
       "error_textarea": "Your message has to be longer than 100 characters."
     }
   ],
-  "heart-text": "From Denmark, With love..."
+  "heart-text": "From Denmark, With love...",
+  "faq": [
+    {
+      "question": "PRICES",
+      "answer": [
+        "CANCELLATION POLICY",
+        "Cancellation four weeks prior = 100% refund",
+        "Cancellation two weeks prior = 50% refund",
+        "Cancellation later than two weeks = full payment"
+      ]
+    },
+    {
+      "question": "THE WALK UP TO GLASS HUT",
+      "answer": [
+        "Neque porro quisquam est qui ",
+        "There are many variations of passages of Lorem Ipsum available.",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+        "The standard chunk of Lorem Ipsum used since the 1500s."
+      ]
+    },
+    {
+      "question": "CAPACITY",
+      "answer": [
+        "Where does it come from?",
+        "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia",
+        "Lorem Ipsum comes from sections 1.10.32.",
+        "The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..'"
+      ]
+    },
+    {
+      "question": "PETS",
+      "answer": [
+        "Where can I get some?",
+        "All the Lorem Ipsum generators on the Internet tend to repeat.",
+        "It uses a dictionary of over 200 Latin words.",
+        "Lorem Ipsum which looks reasonable."
+      ]
+    },
+    {
+      "question": "CHECK-IN / CHECK-OUT",
+      "answer": [
+        "What is Lorem Ipsum?",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "It has survived not only five centuries.",
+        "Lorem Ipsum passages, and more recently with desktop publishing software."
+      ]
+    }
+  ]
 }
