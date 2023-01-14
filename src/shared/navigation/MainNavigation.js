@@ -7,7 +7,6 @@ import NavLinks from './NavLinks';
 import './MainNavigation.css';
 function MainNavigation(props) {
     const location = useLocation();
-    console.log(location.pathname);
     return (
         <div className='header-container' style={location.pathname === '/' ? { position: 'absolute' } : null}>
             <NavLink to='/'>

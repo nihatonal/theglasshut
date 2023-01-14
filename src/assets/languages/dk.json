@@ -206,5 +206,52 @@
       "error_textarea": "Din besked skal være længere end 100 tegn."
     }
   ],
-  "heart-text": "Fra Danmark, med kærlighed..."
+  "heart-text": "Fra Danmark, med kærlighed...",
+  "faq": [
+    {
+      "question": "PRISER",
+      "answer": [
+        "AFBESTILLINGSPOLITIK",
+        "Afbestilling fire uger før = 100 % refusion",
+        "Afbestilling to uger før = 50 % refusion",
+        "Afbestilling senere end to uger = fuld betaling"
+      ]
+    },
+    {
+      "question": "GÅNINGEN OP TIL GLASHYTTEN",
+      "answer": [
+        "Neque porro quisquam est qui",
+        "Der er mange variationer af passager af Lorem Ipsum tilgængelige.",
+        "I modsætning til hvad folk tror, er Lorem Ipsum ikke blot tilfældig tekst.",
+        "Standarddelen af Lorem Ipsum brugt siden 1500-tallet."
+      ]
+    },
+    {
+      "question": "KAPACITET",
+      "answer": [
+        "Hvor kommer det fra?",
+        "Richard McClintock, en latinprofessor ved Hampden-Sydney College i Virginia",
+        "Lorem Ipsum kommer fra afsnit 1.10.32.",
+        "Den første linje i Lorem Ipsum, 'Lorem ipsum dolor sit amet..'"
+      ]
+    },
+    {
+      "question": "kæledyr",
+      "answer": [
+        "Hvor kan jeg få nogle?",
+        "Alle Lorem Ipsum-generatorerne på internettet har en tendens til at gentage sig.",
+        "Den bruger en ordbog med over 200 latinske ord.",
+        "Lorem Ipsum som ser fornuftigt ud."
+      ]
+    },
+    {
+      "question": "INDKJEKNING/UDKLIK",
+      "answer": [
+        "Hvad er Lorem Ipsum?",
+        "Lorem Ipsum er simpelthen en dummy tekst fra trykkeri- og sættebranchen.",
+        "Den har overlevet ikke kun fem århundreder.",
+        "Lorem Ipsum passager, og for nylig med desktop publishing software."
+      ]
+    }
+  ]
 }

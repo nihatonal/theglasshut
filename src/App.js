@@ -6,6 +6,7 @@ import CartProvider from './shared/context/CartContext';
 import MainNavigation from "./shared/navigation/MainNavigation";
 import Footer from "./shared/footer/Footer";
 import ScrollButton from "./shared/UI/ScrollButton";
+import ScrollToTop from './shared/util/ScrollToTop';
 
 import Home from "./Home/page/Home";
 import TheHut from "./TheHut/page/TheHut";
@@ -22,17 +23,19 @@ function App() {
       <LanguageProvider>
         <CartProvider>
           <BrowserRouter>
-            <MainNavigation />
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/thehut" element={<TheHut />} />
-              <Route exact path="/thearea" element={<TheArea />} />
-              <Route exact path="/aboutus" element={<AboutUs />} />
-              <Route exact path="/faq" element={<Faq />} />
-              {/* <Route exact path="/delivery/:fname" element={<Store />} />*/}
-            </Routes>
-            {/* <Contact /> */}
-            <Footer />
+            <ScrollToTop>
+              <MainNavigation />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/thehut" element={<TheHut />} />
+                <Route exact path="/thearea" element={<TheArea />} />
+                <Route exact path="/aboutus" element={<AboutUs />} />
+                <Route exact path="/faq" element={<Faq />} />
+                {/* <Route exact path="/delivery/:fname" element={<Store />} />*/}
+              </Routes>
+              {/* <Contact /> */}
+              <Footer />
+            </ScrollToTop>
             <ScrollButton />
           </BrowserRouter>
         </CartProvider>

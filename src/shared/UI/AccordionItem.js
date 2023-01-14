@@ -2,27 +2,31 @@ import { useRef } from "react";
 
 
 import './AccordionItem.css';
-const AccordionItem = ({ faq, active, onToggle }) => {
+
+const AccordionItem = ({ faq, active, onToggle, arrow_down, arrow_up }) => {
     const { question, answer } = faq;
 
     const contentEl = useRef();
 
     return (
         <li className={`accordion_item ${active ? "active" : ""}`}>
-            <button className="button" onClick={onToggle}>
+            <button className="question" onClick={onToggle}>
                 {question}
-                <span className="control">{active ? "—" : "+"} </span>
+                <span className="control">{active ? arrow_down : arrow_up} </span>
             </button>
             <div
                 ref={contentEl}
                 className="answer_wrapper"
                 style={
                     active
-                        ? { height: contentEl.current.scrollHeight }
+                        ? { height: contentEl.current.scrollHeight, marginTop: '24px' }
                         : { height: "0px" }
                 }
             >
-                <div className="answer">{answer}</div>
+                <div className="answer">
+
+                    {answer.map((el) => <p className="answer-item">{el}</p>)}
+                </div>
             </div>
         </li>
     );

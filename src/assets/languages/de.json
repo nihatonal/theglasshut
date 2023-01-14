@@ -206,5 +206,52 @@
       "error_textarea": "Ihre Nachricht muss länger als 100 Zeichen sein."
     }
   ],
-  "heart-text": "Aus Dänemark, mit Liebe..."
+  "heart-text": "Aus Dänemark, mit Liebe...",
+  "faq": [
+    {
+      "question": "PREISE",
+      "answer": [
+        "STORNIERUNGSBEDINGUNGEN",
+        "Stornierung vier Wochen vorher = 100 % Rückerstattung",
+        "Stornierung zwei Wochen vorher = 50 % Rückerstattung",
+        "Stornierung später als zwei Wochen = volle Zahlung"
+      ]
+    },
+    {
+      "question": "DER HINAUF ZUR GLASHÜTTE",
+      "answer": [
+        "Neque porro quisquam est qui",
+        "Es sind viele Variationen von Passagen von Lorem Ipsum verfügbar.",
+        "Entgegen der landläufigen Meinung ist Lorem Ipsum nicht einfach zufälliger Text.",
+        "Der seit dem 15. Jahrhundert verwendete Standardklumpen von Lorem Ipsum."
+      ]
+    },
+    {
+      "question": "KAPAZITÄT",
+      "answer": [
+        "Woher kommt das?",
+        "Richard McClintock, ein Lateinprofessor am Hampden-Sydney College in Virginia",
+        "Lorem Ipsum stammt aus den Abschnitten 1.10.32.",
+        "Die erste Zeile von Lorem Ipsum, 'Lorem ipsum dolor sit amet..'"
+      ]
+    },
+    {
+      "question": "HAUSTIERE",
+      "answer": [
+        "Wo kann ich etwas bekommen?",
+        "Alle Lorem-Ipsum-Generatoren im Internet neigen dazu, sich zu wiederholen.",
+        "Es verwendet ein Wörterbuch mit über 200 lateinischen Wörtern.",
+        "Lorem Ipsum, was vernünftig aussieht."
+      ]
+    },
+    {
+      "question": "CHECK-IN / CHECK-OUT",
+      "answer": [
+        "Was ist Lorem Ipsum?",
+        "Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie.",
+        "Es hat nicht nur fünf Jahrhunderte überlebt.",
+        "Lorem Ipsum Passagen und neuerdings auch mit Desktop-Publishing-Software."
+      ]
+    }
+  ]
 }

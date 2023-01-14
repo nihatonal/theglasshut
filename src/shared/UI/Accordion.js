@@ -3,7 +3,7 @@ import { useState } from "react";
 import AccordionItem from "./AccordionItem";
 
 import './Accordion.css'
-const Accordion = ({ faqs }) => {
+const Accordion = ({ faqs, arrow_down, arrow_up }) => {
     const [clicked, setClicked] = useState("0");
 
     const handleToggle = (index) => {
@@ -21,6 +21,8 @@ const Accordion = ({ faqs }) => {
                     active={clicked === index}
                     key={index}
                     faq={faq}
+                    arrow_down={arrow_down}
+                    arrow_up={arrow_up}
                 />
             ))}
         </ul>
