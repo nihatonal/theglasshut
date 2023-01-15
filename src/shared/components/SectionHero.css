@@ -43,3 +43,28 @@
   background-color: rgba(51, 51, 51, 0.7);
   z-index: 10;
 }
+
+@media screen and (max-width: 767px) {
+  .section-hero-container {
+    height: 250px;
+  }
+  .section-hero-content {
+    margin-top: 67px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-hero-title {
+    font-size: 40px;
+    line-height: 52px;
+    width: 150%;
+  }
+
+  .section-wrapper {
+    height: 250px;
+  }
+  .section-wrapper-filter {
+    height: 250px;
+  }
+}
