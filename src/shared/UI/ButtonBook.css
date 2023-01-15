@@ -44,3 +44,34 @@
 .button-content p span:nth-last-child(1) {
   margin-left: auto;
 }
+
+@media screen and (max-width: 767px) {
+  .button-book-wrapper {
+    width: 320px;
+    height: 60px;
+    display: flex;
+  }
+
+  .button-book {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .button-content {
+    width: 120px;
+    height: 60px;
+    padding: 4px 8px 2px 18px;
+  }
+  .button-content p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .button-content p span:nth-last-child(2) {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .button-content p span:nth-last-child(1) {
+    margin-left: auto;
+    line-height: 16px;
+  }
+}

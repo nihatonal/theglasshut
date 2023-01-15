@@ -58,6 +58,11 @@ input {
 .page-container {
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .section-container {
+    padding: 0 20px;
+  }
+}
 /* .section-title {
   font-family: "Open Sans";
   font-style: normal;

@@ -40,3 +40,35 @@
 .contact-item:nth-child(4) {
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    width: 100%;
+    height: auto;
+    margin: 40px 0 30px;
+    padding: 0 20px;
+  }
+  .contact-wrapper {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-content {
+    width: 100%;
+    height: auto;
+  }
+  .contact-image-wrapper {
+    margin-top: 50px;
+  }
+  .contact-content .home-section-title {
+    width: 100%;
+  }
+
+  .contact-item:nth-child(2) {
+    margin: 40px 0 15px;
+  }
+  .contact-item:nth-child(4) {
+    margin-bottom: 40px;
+  }
+}

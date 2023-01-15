@@ -39,7 +39,6 @@
   text-align: center;
   color: var(--color-light-black);
   transition: all 0.2s;
-  
 }
 .aboutus-btn:hover {
   color: var(--color-white);
@@ -69,3 +68,4 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+

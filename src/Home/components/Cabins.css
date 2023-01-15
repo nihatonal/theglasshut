@@ -21,3 +21,30 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+@media screen and (max-width: 767px) {
+  .cabins-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .cabins-top-content-info {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .cabins-top-content-img-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cabins-top-content-img-wrapper img {
+    width: 100%;
+  }
+  .cabins-media-galery {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 24px;
+  }
+}

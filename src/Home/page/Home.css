@@ -24,3 +24,19 @@
   color: #5b6460;
   border-bottom: 1.5px solid #5b6460;
 }
+
+@media screen and (max-width: 767px) {
+  .home-section-title {
+    font-size: 28px;
+    line-height: 24px;
+  }
+  .home-section-desc {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 20px 0 10px;
+  }
+  .home-section-btn {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

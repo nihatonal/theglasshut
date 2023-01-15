@@ -10,10 +10,21 @@
   transition: all 0.5s;
   box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.08);
 }
+
 .header-container:hover {
   background-color: rgba(255, 255, 255, 1);
 }
-
+@media screen and (max-width: 767px) {
+  .header-container {
+    height: 60px;
+    padding: 0;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .logo-link img {
+    height: 45px;
+  }
+}
 .book-btn-small {
   font-family: "DIN";
   font-style: normal;
@@ -29,6 +40,12 @@
   text-align: center;
   /* margin-left: 177px;
   margin-right: 32px; */
+}
+
+@media screen and (max-width: 767px) {
+  .book-btn-small {
+    display: none;
+  }
 }
 .book-btn-small:hover {
   background-color: var(--color-primary-hover);
