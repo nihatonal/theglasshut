@@ -53,7 +53,7 @@ ul.options li[aria-selected="true"] {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .select-lang {
     width: 10px;
     margin-left: 0;
@@ -98,4 +98,4 @@ ul.options li[aria-selected="true"] {
   ul.options li span {
     display: none;
   }
-}
+} */

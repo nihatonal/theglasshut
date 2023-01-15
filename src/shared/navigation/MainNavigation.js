@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-
+import LanguageSelector from '../UI/LanguageSelector';
 import { Text } from "../context/Language";
 import Logo from '../../assets/images/logo.png'
 import NavLinks from './NavLinks';
@@ -16,7 +16,11 @@ function MainNavigation(props) {
             </NavLink>
             <NavLinks />
             <button className="book-btn-small"><Text tid="book_now" /></button>
-            <Hamburger onClick={() => setShowSideMenu(!showSideMenu)} show={showSideMenu} />
+            <div className="mobile-menu-wrapper">
+                <LanguageSelector />
+                <Hamburger onClick={() => setShowSideMenu(!showSideMenu)} show={showSideMenu} />
+            </div>
+
         </div>
     );
 }
