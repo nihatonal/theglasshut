@@ -61,6 +61,9 @@ input {
   flex-direction: column;
 }
 @media screen and (max-width: 767px) {
+  .page-container {
+    row-gap: 80px;
+  }
   .section-container {
     padding: 0 20px;
   }

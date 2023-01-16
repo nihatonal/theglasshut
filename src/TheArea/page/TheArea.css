@@ -75,3 +75,29 @@
 .area-wrapper .section-card-container:nth-last-child(3) .activities {
   display: none;
 }
+
+@media screen and (max-width: 767px) {
+  .hero-link {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px 0 30px;
+  }
+  .location-icon {
+    margin-right: 4px;
+  }
+  .area-nav-btn {
+    width: 160px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .area-wrapper .section-card-container:nth-last-child(5) {
+    display: flex;
+    row-gap: 10px;
+  }
+  .activities {
+    order: -1;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+}

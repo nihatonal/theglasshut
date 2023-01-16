@@ -24,7 +24,7 @@
 }
 
 .map-point p:nth-last-child(2) {
-  font-family: 'Handlee', sans-serif;
+  font-family: "Handlee", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -46,4 +46,44 @@
   width: 424px;
   height: 168px;
   margin: 98px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .map-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-wrapper {
+    width: 350px;
+    height: 427px;
+    background: url("../../assets/images/area/map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+  .map-point {
+    right: 66px;
+  }
+
+  .map-point p:nth-last-child(2) {
+    font-size: 20px;
+  }
+  .map-point:nth-last-child(1) {
+    right: -30px;
+  }
+
+  .map-desc {
+    font-size: 24px;
+    line-height: 36px;
+    color: #5b6460;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
 }

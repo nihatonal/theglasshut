@@ -98,3 +98,28 @@
   width: 150px;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .about-content-wrapper {
+    width: 330px;
+    margin-top: 49px;
+  }
+  .about-nav-btn {
+    width: 160px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .aboutus-wrapper .section-card-title {
+    margin-bottom: 20px;
+  }
+  .section-image-wrapper {
+    width: 100%;
+    height: 478px;
+  }
+  .section-image-wrapper img {
+    width: 100%;
+    height: 478px;
+    object-fit: cover;
+  }
+}
