@@ -15,7 +15,7 @@
 }
 
 .slide-wrapper .slide-image {
-  width: 546px;
+  /* width: 546px; */
   height: 478px;
   object-fit: cover;
 }
@@ -88,7 +88,6 @@
   }
 
   .slide-wrapper .slide-image {
-    width: 546px;
     height: 250px;
     object-fit: cover;
   }

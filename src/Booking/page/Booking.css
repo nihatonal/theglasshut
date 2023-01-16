@@ -1,0 +1,33 @@
+.booking-nav-btn {
+  width: 180px;
+  height: 55px;
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0.7px solid #ffffff;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking-nav-btn:hover {
+  background: var(--color-primary);
+}
+
+@media screen and (max-width: 767px) {
+  .location-icon {
+    margin-right: 4px;
+  }
+  .area-nav-btn {
+    width: 160px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 28px;
+  }
+}

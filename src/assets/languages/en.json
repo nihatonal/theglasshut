@@ -253,5 +253,64 @@
         "Lorem Ipsum passages, and more recently with desktop publishing software."
       ]
     }
+  ],
+  "booking": "Booking",
+  "booking_additionals": "Choose Additional Services",
+  "booking_additional_services": [
+    {
+      "name": "Fresh Breakfast for one",
+      "portion": "400kr",
+      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+    },
+    {
+      "name": "Fresh Breakfast for two",
+      "portion": "500kr",
+      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+    },
+    {
+      "name": "Classic Dinner for one",
+      "portion": "600kr",
+      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+    },
+    {
+      "name": "Classic Dinner for one",
+      "portion": "800kr",
+      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+    },
+    {
+      "name": "Electric Car Charge",
+      "portion": "800kr",
+      "desc": "Lorem Ipsum is simply a book of paper."
+    }
+  ],
+  "booking_hot_rules": [
+    "Hut rules",
+    "Check-in: 2:00 PM - 11:00 PM ",
+    "Checkout: 11:00 AM",
+    "Not suitable for children and infants",
+    "No smoking",
+    "No pets"
+  ],
+  "booking_cancellation_policy": [
+    "Cancellation policy",
+    "Free cancellation until 1:00 PM on Mar 27",
+    "After that, cancel before 2: 00 PM on Apr 1 and get a 50% refund, minus the first night and service fee."
+  ],
+  "booking_important_info": [
+    "Important Information",
+    "You need to hike a steep hill to arrive at the treehouses, it takes approx 20-30 minutes on a trail with stairs and uneven ground."
+  ],
+  "booking_words": [
+    {
+      "discount": "discount",
+      "total": "Total",
+      "night": "night",
+      "nights": "nights",
+      "check_in": "Check in",
+      "check_out": "Check out",
+      "guests": "Guests",
+      "book": "book",
+      "coupon": "Coupon Code"
+    }
   ]
 }

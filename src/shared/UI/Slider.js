@@ -7,10 +7,13 @@ const Slider = ({ slides }) => {
     const ref = useRef(null);
     const [current, setCurrent] = useState(0);
     const length = slides.length;
-    const [widthSlide, setWidthSlide] = useState(546)
+    const [widthSlide, setWidthSlide] = useState(0);
+
     useEffect(() => {
+        console.log(ref.current.offsetWidth)
         setWidthSlide(ref.current.offsetWidth)
-    }, [ref.current]);
+    }, []);
+
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     };
@@ -44,14 +47,17 @@ const Slider = ({ slides }) => {
                 />
                 <p>0{slides.length}</p>
             </div>
-            <div ref={ref} className='slide-wrapper' style={{ left: `${-widthSlide * current}px` }}>
+            <div ref={ref} className='slide-wrapper'
+                style={{ left: `${-widthSlide * current}px` }}
+            >
                 {slides.map((slide, index) => {
                     return (
                         <div
+                            style={{ width: `${widthSlide}px` }}
                             className={index === current ? 'slide_mini active' : 'slide_mini'}
                             key={index}
                         >
-                            <img src={slide.image} alt='travel' className='slide-image' />
+                            <img src={slide.image} style={{ width: `${widthSlide}px` }} alt='travel' className='slide-image' />
                         </div>
                     );
                 })}

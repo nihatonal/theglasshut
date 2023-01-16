@@ -13,6 +13,7 @@ import TheHut from "./TheHut/page/TheHut";
 import TheArea from "./TheArea/page/TheArea";
 import AboutUs from "./AboutUs/page/AboutUs";
 import Faq from "./Faq/page/Faq";
+import Booking from "./Booking/page/Booking";
 
 import './App.css'
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <Route exact path="/thearea" element={<TheArea />} />
                 <Route exact path="/aboutus" element={<AboutUs />} />
                 <Route exact path="/faq" element={<Faq />} />
+                <Route exact path="/booking" element={<Booking />} />
                 {/* <Route exact path="/delivery/:fname" element={<Store />} />*/}
               </Routes>
               {/* <Contact /> */}

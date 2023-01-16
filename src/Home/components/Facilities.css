@@ -39,7 +39,6 @@
     flex-direction: column;
     align-items: center;
     padding: 0 10px 50px 10px;
-    
   }
   .facilities-container h4 {
     font-weight: 300;
@@ -48,10 +47,8 @@
   .facilities-wrapper {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .facility-item {
     width: 100px;
