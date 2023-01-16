@@ -25,7 +25,7 @@
   margin: 15px;
   object-fit: cover;
 }
-.images-wrapper img:nth-last-child(2) {
+.images-wrapper .image-gallery-item-wrapper:nth-last-child(2) {
   order: 1;
 }
 .image-content {
@@ -90,16 +90,7 @@
     order: 0;
     margin: 0;
   }
-  .images-wrapper img:nth-last-child(5) {
-    order: 2;
-  }
-  .images-wrapper img:nth-last-child(4) {
-    order: 3;
-  }
-  .images-wrapper img:nth-last-child(3) {
-    order: 4;
-  }
-  .images-wrapper img:nth-last-child(2) {
-    order: 5;
+  .images-wrapper .image-gallery-item-wrapper:nth-last-child(2) {
+    margin-bottom: 20px;
   }
 }
