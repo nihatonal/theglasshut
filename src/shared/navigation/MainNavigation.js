@@ -22,7 +22,7 @@ function MainNavigation(props) {
                 <LanguageSelector />
                 <Hamburger onClick={() => setShowSideMenu(!showSideMenu)} show={showSideMenu} />
             </div>
-            <SideMenu show={showSideMenu} />
+            <SideMenu show={showSideMenu} close={() => setShowSideMenu(false)} />
         </div>
     );
 }

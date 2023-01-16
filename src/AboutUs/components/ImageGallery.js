@@ -7,8 +7,8 @@ function ImageGallery(props) {
         <div className='images-container'>
             <h2 className="images-title">{title}</h2>
             <div className='images-wrapper'>
-                {images.map(image => <div className='image-gallery-item-wrapper'> <img src={image.image} alt='image_gallery' /></div>)}
-                <div className="image-content">
+                {images.map(image => <div className='image-gallery-item-wrapper'> <img key={image.image} src={image.image} alt='image_gallery' /></div>)}
+                <div className="image-content" >
                     <p className="image-content-desc">{image_content}</p>
                 </div>
             </div>

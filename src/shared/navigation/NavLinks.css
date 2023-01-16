@@ -27,3 +27,68 @@
 .active-nav-item {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 767px) {
+  .nav-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-underline-offset: 0.3em;
+  }
+  .nav-item:hover {
+    text-decoration: none;
+  }
+  .nav-item-wrapper {
+    position: relative;
+    width: 120px;
+    text-align: center;
+  }
+  .nav-item::before {
+    content: "";
+    width: 0rem;
+    height: 0.1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    left: -4rem;
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+
+  .nav-item::after {
+    content: "";
+    width: 0rem;
+    height: 0.1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    right: -4rem;
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+  .nav-item:hover::before,
+  .nav-item:hover::after {
+    width: 3rem;
+  }
+  .active-nav-item {
+    text-decoration: none;
+  }
+  .active-nav-item::after {
+    content: "";
+    width: 3rem;
+    height: 0.1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    right: -4rem;
+  }
+  .active-nav-item::before {
+    content: "";
+    width: 3rem;
+    height: 0.1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    left: -4rem;
+  }
+}
