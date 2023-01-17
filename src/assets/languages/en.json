@@ -260,37 +260,126 @@
     {
       "name": "Fresh Breakfast for one",
       "id": "breakfast01",
-      "price": "400kr",
+      "price": 400,
       "desc_title": "Fresh Breakfast",
-      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+      "desc": [
+        {
+          "id": "breakfast_01",
+           "price": 600,
+          "title": "Breakfast 01",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "breakfast_02",
+           "price": 600,
+          "title": "Breakfast 02",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "breakfast_03",
+           "price": 600,
+          "title": "Breakfast 03",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        }
+      ]
     },
     {
       "name": "Fresh Breakfast for two",
       "id": "breakfast02",
-      "price": "500kr",
+      "price": 600,
       "desc_title": "Fresh Breakfast",
-      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+      "desc": [
+        {
+          "id": "breakfastfor2_01",
+          "price": 600,
+          "title": "Breakfastfor2 01",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "breakfastfor2_02",
+          "price": 600,
+          "title": "Breakfastfor2 02",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "breakfastfor2_03",
+          "price": 600,
+          "title": "Breakfastfor2 03",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        }
+      ]
     },
     {
       "name": "Classic Dinner for one",
       "id": "dinner01",
-      "price": "600kr",
+      "price": 600,
       "desc_title": "Classic Dinner",
-      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+      "desc": [
+        {
+          "id": "dinner_01",
+          "title": "Dinner_01 01",
+          "price": 600,
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "dinner_02",
+          "title": "Dinner_01 02",
+          "price": 600,
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "dinner_01_03",
+          "price": 600,
+          "title": "Dinner 03",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        }
+      ]
     },
     {
       "name": "Classic Dinner for one",
       "id": "dinner02",
-      "price": "800kr",
+      "price": 600,
       "desc_title": "Classic Dinner",
-      "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+      "desc": [
+        {
+          "id": "dinnerfor2_01_01",
+          "price": 600,
+          "title": "Dinnerfor2 01",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "breakfast_02",
+          "price": 600,
+          "title": "Dinnerfor2 02",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "breakfast_03",
+          "price": 600,
+          "title": "Dinnerfor2 03",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        }
+      ]
     },
     {
       "name": "Electric Car Charge",
       "id": "charge01",
-      "price": "800kr",
+      "price": 600,
       "desc_title": "Electric Car Charge",
-      "desc": "Lorem Ipsum is simply a book of paper."
+      "desc": [
+        {
+          "id": "charge_01",
+          "title": "charge 01",
+          "price": 600,
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        },
+        {
+          "id": "charge_02",
+          "price": 600,
+          "title": "charge 02",
+          "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
+        }
+      ]
     }
   ],
   "booking_hot_rules": [

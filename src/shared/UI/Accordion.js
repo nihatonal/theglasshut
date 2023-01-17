@@ -1,11 +1,11 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import { CartContext } from "../../shared/context/CartContext";
 import './Accordion.css'
 const Accordion = ({ faqs, arrow_down, arrow_up, AccordionItem, }) => {
     const cart = useContext(CartContext);
     const [clicked, setClicked] = useState("0");
     const [checkedState, setCheckedState] = useState(
-        new Array(faqs.length).fill(false)
+        new Array(3).fill(false)
     );
     const handleToggle = (index) => {
         if (clicked === index) {
@@ -17,6 +17,7 @@ const Accordion = ({ faqs, arrow_down, arrow_up, AccordionItem, }) => {
         const updatedCheckedState = checkedState.map((item, index) =>
             index === position ? !item : item
         );
+        console.log(e.target.id)
         setCheckedState(updatedCheckedState);
 
         let addition;
@@ -31,11 +32,7 @@ const Accordion = ({ faqs, arrow_down, arrow_up, AccordionItem, }) => {
         } else {
             cart.removeAdditionsToCart(e.target.id);
         }
-
     }
-    useEffect(() => {
-        console.log(cart.items)
-    }, [checkedState])
     return (
         <ul className="accordion">
             {faqs.map((faq, index) => (
@@ -46,9 +43,9 @@ const Accordion = ({ faqs, arrow_down, arrow_up, AccordionItem, }) => {
                     faq={faq}
                     arrow_down={arrow_down}
                     arrow_up={arrow_up}
-                    checkboxHandler={(e) => checkboxHandler(e, index)}
-                    value={faq.price}
-                    checked={checkedState[index]}
+                    // checkboxHandler={(e) => checkboxHandler(e, index)}
+                    // value={faq.price}
+                    // checked={checkedState[index]}
 
                 />
             ))}

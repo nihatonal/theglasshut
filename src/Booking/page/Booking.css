@@ -1,3 +1,15 @@
+.booking-wrapper {
+  width: 100%;
+}
+.booking-wrapper {
+  width: 1230px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  margin-bottom: 100px;
+  column-gap: 138px;
+}
 .booking-nav-btn {
   width: 180px;
   height: 55px;
@@ -19,7 +31,46 @@
 .booking-nav-btn:hover {
   background: var(--color-primary);
 }
-
+.booking-section-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #5b6460;
+  border-bottom: 0.7px solid #5b6460;
+  width: 660px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+.booking-section-item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+}
+.booking-section-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hut-rules {
+  width: 270px;
+  height: 162px;
+  grid-row: 2;
+}
+.cancellation {
+  width: 657.15px;
+  height: 84px;
+  grid-row: 3;
+}
+.information {
+  width: 656.15px;
+  height: 56px;
+  grid-row: 4;
+}
 @media screen and (max-width: 767px) {
   .location-icon {
     margin-right: 4px;

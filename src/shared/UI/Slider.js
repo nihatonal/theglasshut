@@ -10,7 +10,6 @@ const Slider = ({ slides }) => {
     const [widthSlide, setWidthSlide] = useState(0);
 
     useEffect(() => {
-        console.log(ref.current.offsetWidth)
         setWidthSlide(ref.current.offsetWidth)
     }, []);
 

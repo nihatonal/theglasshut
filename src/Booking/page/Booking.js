@@ -1,8 +1,14 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { LanguageContext } from "../../shared/context/Language";
+
 import SectionHero from '../../shared/components/SectionHero';
 import Additionals from '../components/Additionals';
+import HutRules from '../components/HutRules';
+import Cancellation from '../components/Cancellation';
+import Information from '../components/Information';
+import Cart from '../components/Cart';
+
 import background from '../../assets/images/booking/hero.png';
 import { MdLocationOn } from "react-icons/md";
 import './Booking.css';
@@ -19,13 +25,21 @@ function Booking(props) {
             <NavLink to='/faq' className='booking-nav-btn'>{lang.dictionary["read_faq"]}</NavLink>
         </div>
     return (
-        <div className='page-container booking-wrapper'>
+        <div className='page-container booking-container'>
             <SectionHero
                 image={background}
                 title={lang.dictionary["booking"]}
                 content={content}
+
             />
-            <Additionals />
+            <div className='booking-wrapper'>
+                <Additionals />
+                <Cart />
+                <HutRules />
+                <Cancellation />
+                <Information />
+            </div>
+
         </div>
     );
 }

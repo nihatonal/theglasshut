@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { getProductData } from "../util/productStore";
 
 
@@ -50,7 +50,6 @@ export function CartProvider({ children }) {
                 ]
             )
         } else { // product is in cart
-            // [ { id: 1 , quantity: 3 }, { id: 2, quantity: 1 } ]    add to product id of 2
             setCartProducts(
                 cartProducts.map(
                     product =>
@@ -61,21 +60,45 @@ export function CartProvider({ children }) {
             )
         }
     }
-    function addAdditionsToCart(arr) {
-        setCartProducts(
-            [
-                ...cartProducts, arr
+    function addAdditionsToCart(id, item) {
+        const x = cartProducts.filter(product => product.id === id)
+        if (x.length === 0) {
+            setCartProducts(
+                [
+                    ...cartProducts,
+                    {
+                        id: id,
+                        additions: [item]
+                    }
+                ]
+            )
+        } else {
+            console.log(x[0].additions)
 
-            ]
-        )
+            x[0].additions.push(item)
+            setCartProducts(
+                cartProducts.map(
+                    product =>
+                        product.id === id
+                            ? { ...product }
+                            : product
+                )
+            )
+        }
+
+
+
 
     }
-    function removeAdditionsToCart(id) {
+    function removeAdditionsToCart(id, item_id) {
+
         setCartProducts(
-            cartProducts =>
-                cartProducts.filter(currentProduct => {
-                    return currentProduct.id !== id;
-                })
+            cartProducts.map(
+                product =>
+                    product.id === id
+                        ? { ...product, additions: product.additions.filter(item => item.id !== item_id) }
+                        : product
+            )
         )
     }
 

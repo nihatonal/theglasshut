@@ -1,4 +1,4 @@
-import React, { useContext,useState } from 'react';
+import React, { useContext } from 'react';
 import { LanguageContext } from "../../shared/context/Language";
 import Accordion from '../../shared/UI/Accordion';
 import AccordionItem from './AccordionItem.js';
@@ -15,7 +15,7 @@ function Additionals(props) {
     return (
         <div>
             <div className="additionals-wrapper">
-                <p className="additionals-title">{lang.dictionary["booking_additionals"]}</p>
+                <p className="booking-section-title">{lang.dictionary["booking_additionals"]}</p>
                 <Accordion
                     faqs={sectionData}
                     arrow_down={arrow_down}
