@@ -1,7 +1,8 @@
-import { useState } from "react";
-
+import { useState, useContext, useEffect } from "react";
+import { CartContext } from "../../shared/context/CartContext";
 import './Accordion.css'
 const Accordion = ({ faqs, arrow_down, arrow_up, AccordionItem, }) => {
+    const cart = useContext(CartContext);
     const [clicked, setClicked] = useState("0");
     const [checkedState, setCheckedState] = useState(
         new Array(faqs.length).fill(false)
@@ -16,30 +17,32 @@ const Accordion = ({ faqs, arrow_down, arrow_up, AccordionItem, }) => {
         const updatedCheckedState = checkedState.map((item, index) =>
             index === position ? !item : item
         );
-        console.log(updatedCheckedState)
         setCheckedState(updatedCheckedState);
 
-        // let addition;
-        // if (e.target.checked) {
-        //     addition = {
-        //         id: e.target.id,
-        //         name: e.target.name,
-        //         price_additon: e.target.value
-        //     }
-        //     cart.addAdditionsToCart(id, addition);
-        // } else {
-        //     let addition_id = e.target.id;
-        //     cart.removeAdditionsToCart(id, addition_id);
-        // }
+        let addition;
+        if (e.target.checked) {
+            addition = {
+                id: e.target.id,
+                name: e.target.name,
+                price: e.target.value
+            }
+            // console.log(addition)
+            cart.addAdditionsToCart(addition);
+        } else {
+            cart.removeAdditionsToCart(e.target.id);
+        }
 
     }
+    useEffect(() => {
+        console.log(cart.items)
+    }, [checkedState])
     return (
         <ul className="accordion">
             {faqs.map((faq, index) => (
                 <AccordionItem
                     onToggle={() => handleToggle(index)}
                     active={clicked === index}
-                    key={index}
+                    key={index + faq.price}
                     faq={faq}
                     arrow_down={arrow_down}
                     arrow_up={arrow_up}

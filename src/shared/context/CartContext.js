@@ -61,36 +61,22 @@ export function CartProvider({ children }) {
             )
         }
     }
-    function addAdditionsToCart(id, arr) {
-        const x = cartProducts.filter(product => product.id === id)[0].additions
-        x.push(arr)
+    function addAdditionsToCart(arr) {
         setCartProducts(
-            cartProducts.map(
-                product =>
-                    product.id === id                                // if condition
-                        ? { ...product, additions: x } // if statement is true
-                        : product                                        // if statement is false
-            )
+            [
+                ...cartProducts, arr
+
+            ]
         )
 
-        //console.log(cartProducts)
     }
-    function removeAdditionsToCart(id, addition_id) {
-        console.log(id, addition_id);
-        const selected_product = cartProducts.filter(product => product.id === id)[0]
-        selected_product.additions = selected_product.additions.filter(function (obj) {
-            return obj.id !== addition_id;
-        });
+    function removeAdditionsToCart(id) {
         setCartProducts(
-            cartProducts.map(
-                product =>
-                    product.id === id                                // if condition
-                        ? { ...product, additions: selected_product.additions } // if statement is true
-                        : product                                        // if statement is false
-            )
+            cartProducts =>
+                cartProducts.filter(currentProduct => {
+                    return currentProduct.id !== id;
+                })
         )
-        //console.log(cartProducts)
-
     }
 
 
