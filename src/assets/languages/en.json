@@ -259,27 +259,37 @@
   "booking_additional_services": [
     {
       "name": "Fresh Breakfast for one",
-      "portion": "400kr",
+      "id": "breakfast01",
+      "price": "400kr",
+      "desc_title": "Fresh Breakfast",
       "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
     },
     {
       "name": "Fresh Breakfast for two",
-      "portion": "500kr",
+      "id": "breakfast02",
+      "price": "500kr",
+      "desc_title": "Fresh Breakfast",
       "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
     },
     {
       "name": "Classic Dinner for one",
-      "portion": "600kr",
+      "id": "dinner01",
+      "price": "600kr",
+      "desc_title": "Classic Dinner",
       "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
     },
     {
       "name": "Classic Dinner for one",
-      "portion": "800kr",
+      "id": "dinner02",
+      "price": "800kr",
+      "desc_title": "Classic Dinner",
       "desc": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
     },
     {
       "name": "Electric Car Charge",
-      "portion": "800kr",
+      "id": "charge01",
+      "price": "800kr",
+      "desc_title": "Electric Car Charge",
       "desc": "Lorem Ipsum is simply a book of paper."
     }
   ],

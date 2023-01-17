@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { LanguageContext } from "../../shared/context/Language";
 import SectionHero from '../../shared/components/SectionHero';
+import Additionals from '../components/Additionals';
 import background from '../../assets/images/booking/hero.png';
 import { MdLocationOn } from "react-icons/md";
 import './Booking.css';
@@ -21,9 +22,10 @@ function Booking(props) {
         <div className='page-container booking-wrapper'>
             <SectionHero
                 image={background}
-                title={lang.dictionary["area"]}
+                title={lang.dictionary["booking"]}
                 content={content}
             />
+            <Additionals />
         </div>
     );
 }
