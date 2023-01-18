@@ -265,19 +265,19 @@
       "desc": [
         {
           "id": "breakfast_01",
-           "price": 600,
+          "price": 600,
           "title": "Breakfast 01",
           "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
         },
         {
           "id": "breakfast_02",
-           "price": 600,
+          "price": 600,
           "title": "Breakfast 02",
           "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
         },
         {
           "id": "breakfast_03",
-           "price": 600,
+          "price": 600,
           "title": "Breakfast 03",
           "description": "Bread, Coffee, milk, juice, and a selection of spreads + toppings."
         }
@@ -409,7 +409,10 @@
       "check_out": "Check out",
       "guests": "Guests",
       "book": "book",
-      "coupon": "Coupon Code"
+      "coupon": "Coupon Code",
+      "apply": "Apply",
+      "clear": "Clear dates",
+      "close": "Close"
     }
   ]
 }

@@ -135,15 +135,7 @@ export function CartProvider({ children }) {
     function getTotalCost() {
         let totalCost = 0;
         cartProducts.map((cartItem) => {
-            const productData = getProductData(cartItem.id);
-            const selected_product = cartProducts.filter(product => product.id === cartItem.id)[0]
-            if (selected_product.additions) {
-                totalCost += (productData.price + selected_product.additions.reduce((n, { price_additon }) => n + price_additon * 1, 0)) * cartItem.quantity;
-
-            } else {
-                totalCost += (productData.price * cartItem.quantity);
-            }
-
+            totalCost += (cartItem.additions.reduce((n, { price }) => n + price * 1, 0));
         });
         return totalCost;
     }

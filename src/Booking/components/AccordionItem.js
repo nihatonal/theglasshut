@@ -83,8 +83,13 @@ const AccordionItem = ({ faq, active, onToggle, arrow_down, arrow_up }) => {
 
                             <span className={checkedState[index] ? "checked" : ""}>{checkedState[index] ? <HiOutlineCheck /> : <HiPlus />}</span>
                         </label>
-                        <p className="desc-item-title">{item.title}<span className="desc-item-price"> {`${price}kr`}</span></p>
-                        <p className="desc-item-desc">{item.description}</p>
+                        <p className="desc-item-title">
+                            {item.title}
+                            <span className="desc-item-price"> {`${price}kr`}</span>
+                        </p>
+                        <p className="desc-item-desc">
+                            {item.description}
+                        </p>
                     </div>
                 )}
             </div>
