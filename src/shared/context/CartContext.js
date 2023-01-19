@@ -1,9 +1,8 @@
-import { createContext, useState, useEffect } from "react";
-import { getProductData } from "../util/productStore";
-
+import { createContext, useState } from "react";
 
 export const CartContext = createContext({
     items: [],
+    dateRange: [],
     booking: null,
     getProductQuantity: () => { },
     addOneToCart: () => { },
@@ -18,12 +17,15 @@ export const CartContext = createContext({
 export function CartProvider({ children }) {
     const [cartProducts, setCartProducts] = useState([]);
     const [bookingOpen, setBookingOpen] = useState(false);
+    const [dateRange, setDateRange] = useState();
 
     // [ { id: 1 , quantity: 3 }, { id: 2, quantity: 1 } ]
     function modalHandler(x) {
         setBookingOpen(x)
     }
-
+    function setDates(x) {
+        setDateRange(x)
+    }
 
     function getProductQuantity(id) {
         const quantity = cartProducts.find(product => product.id === id)?.quantity;
@@ -121,9 +123,6 @@ export function CartProvider({ children }) {
     }
 
     function deleteFromCart(id) {
-        // [] if an object meets a condition, add the object to array
-        // [product1, product2, product3]
-        // [product1, product3]
         setCartProducts(
             cartProducts =>
                 cartProducts.filter(currentProduct => {
@@ -143,6 +142,8 @@ export function CartProvider({ children }) {
     const contextValue = {
         items: cartProducts,
         booking: bookingOpen,
+        dateRange: dateRange,
+        setDates,
         getProductQuantity,
         addOneToCart,
         removeOneFromCart,

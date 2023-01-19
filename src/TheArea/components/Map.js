@@ -1,6 +1,5 @@
 import React from 'react';
 
-import map from '../../assets/images/area/map.png';
 import point from '../../assets/images/area/point.png';
 import './Map.css';
 function Map(props) {

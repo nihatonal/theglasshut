@@ -25,6 +25,32 @@
   border: 0.7px solid #5b6460;
   margin: 24px 0;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.calendar-item {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+  color: #333333;
+  margin: 0 auto;
+}
+.calendar-item:nth-last-child(3) {
+  border-right: 0.7px solid #5b6460;
+  border-left: 0.7px solid #5b6460;
+  padding: 0 20px
+}
+.calendar-item p:nth-last-child(1) {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 3px;
 }
 .cart-book-btn {
   width: 384px;
