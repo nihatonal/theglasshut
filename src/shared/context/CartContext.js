@@ -1,9 +1,10 @@
 import { createContext, useState } from "react";
-
+import moment from "moment";
 export const CartContext = createContext({
     items: [],
     dateRange: [],
     booking: null,
+    guests: 1,
     getProductQuantity: () => { },
     addOneToCart: () => { },
     removeOneFromCart: () => { },
@@ -17,7 +18,8 @@ export const CartContext = createContext({
 export function CartProvider({ children }) {
     const [cartProducts, setCartProducts] = useState([]);
     const [bookingOpen, setBookingOpen] = useState(false);
-    const [dateRange, setDateRange] = useState();
+    const [dateRange, setDateRange] = useState([moment(new Date()).format("YYYY/MM/DD"), moment().add(1, 'days').format("YYYY/MM/DD")]);
+    const [countGuests, setCountGuests] = useState(1)
 
     // [ { id: 1 , quantity: 3 }, { id: 2, quantity: 1 } ]
     function modalHandler(x) {
@@ -26,6 +28,16 @@ export function CartProvider({ children }) {
     function setDates(x) {
         setDateRange(x)
     }
+    function addGuest() {
+
+        setCountGuests(countGuests + 1)
+    }
+    function removeGuest() {
+        if (countGuests > 1) {
+            setCountGuests(countGuests - 1)
+        }
+    }
+
 
     function getProductQuantity(id) {
         const quantity = cartProducts.find(product => product.id === id)?.quantity;
@@ -134,7 +146,7 @@ export function CartProvider({ children }) {
     function getTotalCost() {
         let totalCost = 0;
         cartProducts.map((cartItem) => {
-            totalCost += (cartItem.additions.reduce((n, { price }) => n + price * 1, 0));
+            return totalCost += (cartItem.additions.reduce((n, { price }) => n + price * 1, 0));
         });
         return totalCost;
     }
@@ -143,6 +155,7 @@ export function CartProvider({ children }) {
         items: cartProducts,
         booking: bookingOpen,
         dateRange: dateRange,
+        guests: countGuests,
         setDates,
         getProductQuantity,
         addOneToCart,
@@ -151,7 +164,9 @@ export function CartProvider({ children }) {
         getTotalCost,
         addAdditionsToCart,
         removeAdditionsToCart,
-        modalHandler
+        modalHandler,
+        addGuest,
+        removeGuest
     }
 
     return (
