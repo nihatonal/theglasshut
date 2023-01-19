@@ -253,5 +253,167 @@
         "Lorem Ipsum passager, og for nylig med desktop publishing software."
       ]
     }
+  ],
+  "booking": "Booking",
+  "booking_additionals": "Vælg yderligere tjenester",
+  "booking_additional_services": [
+    {
+      "name": "Frisk morgenmad for én",
+      "id": "morgenmad01",
+      "price": 400,
+      "desc_title": "Frisk morgenmad",
+      "desc": [
+        {
+          "id": "morgenmad_01",
+          "price": 600,
+          "title": "Morgenmad 01",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "morgenmad_02",
+          "price": 600,
+          "title": "Morgenmad 02",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "morgenmad_03",
+          "price": 600,
+          "title": "Morgenmad 03",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        }
+      ]
+    },
+    {
+      "name": "Frisk morgenmad for to",
+      "id": "morgenmad02",
+      "price": 600,
+      "desc_title": "Frisk morgenmad",
+      "desc": [
+        {
+          "id": "morgenmad for2_01",
+          "price": 600,
+          "title": "Morgenmad til 2 01",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "morgenmad for2_02",
+          "price": 600,
+          "title": "Morgenmad til 2 02",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "morgenmad for2_03",
+          "price": 600,
+          "title": "Morgenmad til 2 03",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        }
+      ]
+    },
+    {
+      "name": "Klassisk middag for én",
+      "id": "middag01",
+      "price": 600,
+      "desc_title": "Klassisk middag",
+      "desc": [
+        {
+          "id": "middag_01",
+          "title": "Aftensmad_01 01",
+          "price": 600,
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "middag_02",
+          "title": "Aftensmad_01 02",
+          "price": 600,
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "middag_01_03",
+          "price": 600,
+          "title": "Middag 03",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        }
+      ]
+    },
+    {
+      "name": "Klassisk middag for én",
+      "id": "middag02",
+      "price": 600,
+      "desc_title": "Klassisk middag",
+      "desc": [
+        {
+          "id": "middag til 2_01_01",
+          "price": 600,
+          "title": "Aftensmad til 2 01",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "morgenmad_02",
+          "price": 600,
+          "title": "Aftensmad til 2 02",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "morgenmad_03",
+          "price": 600,
+          "title": "Aftensmad til 2 03",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        }
+      ]
+    },
+    {
+      "name": "Elbilafgift",
+      "id": "charge01",
+      "price": 600,
+      "desc_title": "Elbilopladning",
+      "desc": [
+        {
+          "id": "charge_01",
+          "title": "afgift 01",
+          "price": 600,
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        },
+        {
+          "id": "charge_02",
+          "price": 600,
+          "title": "afgift 02",
+          "description": "Brød, kaffe, mælk, juice og et udvalg af smørepålæg + toppings."
+        }
+      ]
+    }
+  ],
+  "booking_hot_rules": [
+    "Hut regler",
+    "Check-in: 14.00 - 23.00",
+    "Kasse: 11:00",
+    "Ikke egnet til børn og spædbørn",
+    "Rygning forbudt",
+    "Ingen kæledyr"
+  ],
+  "booking_cancellation_policy": [
+    "Afbestillingspolitik",
+    "Gratis afbestilling indtil kl. 13.00 den 27. marts",
+    "Derefter skal du annullere før kl. 14.00 den 1. april og få 50 % refusion, minus den første nat og servicegebyr."
+  ],
+  "booking_important_info": [
+    "Vigtig information",
+    "Du skal gå en stejl bakke for at nå frem til træhusene, det tager ca. 20-30 minutter på en sti med trapper og ujævnt terræn."
+  ],
+  "booking_words": [
+    {
+      "rabat": "rabat",
+      "total": "Total",
+      "night": "nat",
+      "nights": "nætter",
+      "check_in": "Tjek ind",
+      "check_out": "Tjek ud",
+      "guests": "Gæster",
+      "book": "bog",
+      "coupon": "Kuponkode",
+      "apply": "Anvend",
+      "clear": "Ryd datoer",
+      "close": "Luk",
+      "error_dates": "Hent venligst gyldige datoer"
+    }
   ]
 }

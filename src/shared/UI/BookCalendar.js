@@ -19,11 +19,11 @@ function BookCalendar(props) {
 
     function expandDates(startDate, stopDate) {
         let dateArray = [];
-        let currentDate = moment(startDate);
-        let stop_Date = moment(stopDate);
+        let currentDate = moment(new Date(startDate));
+        let stop_Date = moment(new Date(stopDate));
         while (currentDate <= stop_Date) {
-            dateArray.push(moment(currentDate).format("YYYY/MM/DD"));
-            currentDate = moment(currentDate).add(1, "days");
+            dateArray.push(moment(new Date(currentDate)).format("YYYY/MM/DD"));
+            currentDate = moment(new Date(currentDate)).add(1, "days");
         }
         return dateArray;
     }
@@ -31,10 +31,11 @@ function BookCalendar(props) {
 
     useEffect(() => {
         if (!value) return
-        let selectedRange = expandDates(moment(value[0]).format("YYYY/MM/DD"), moment(value[1]).format("YYYY/MM/DD"))
+        let selectedRange = expandDates(moment(new Date(value[0])).format("YYYY/MM/DD"), moment(new Date(value[1])).format("YYYY/MM/DD"))
         if (checker(selectedRange, markDates)) {
             setError(true)
-        } else (
+        }
+        else (
             cart.setDates(selectedRange)
         )
     }, [value, markDates])
@@ -64,7 +65,7 @@ function BookCalendar(props) {
                     }
                 }}
                 tileDisabled={({ activeStartDate, date, view }) => markDates && expandDates(markDates[0], markDates[1]).find((x) => x === moment(date).format("YYYY/MM/DD"))}
-            // goToRangeStartOnSelect={false}
+
             />
             <div className="calendar-btns-wrapper">
                 <button onClick={() => onChange(null)} className="clear-dates">{sectionData.clear}</button>
@@ -74,7 +75,7 @@ function BookCalendar(props) {
                 style={error ? { display: "flex" } : null}
                 onClick={() => setError(false)}
             >
-                <p>Please pick up valid dates</p>
+                <p>{sectionData.error_dates}</p>
             </div>
         </div>
     );

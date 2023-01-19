@@ -70,7 +70,7 @@ const AccordionItem = ({ faq, active, onToggle, arrow_down, arrow_up }) => {
             >
 
                 {desc.map((item, index) =>
-                    <div className="desc" key={index}>
+                    <div className="desc" key={index+item.id}>
                         <label className="check-button">
                             <input
                                 type="checkbox"

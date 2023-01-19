@@ -25,7 +25,7 @@ const AccordionItem = ({ faq, active, onToggle, arrow_down, arrow_up }) => {
             >
                 <div className="answer">
 
-                    {answer.map((el) => <p className="answer-item">{el}</p>)}
+                    {answer.map((el,index) => <p className="answer-item" key={index}>{el}</p>)}
                 </div>
             </div>
         </li>

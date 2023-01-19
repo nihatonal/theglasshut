@@ -412,7 +412,8 @@
       "coupon": "Coupon Code",
       "apply": "Apply",
       "clear": "Clear dates",
-      "close": "Close"
+      "close": "Close",
+      "error_dates": "Please pick up valid dates"
     }
   ]
 }

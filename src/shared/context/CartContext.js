@@ -75,7 +75,7 @@ export function CartProvider({ children }) {
                 ]
             )
         } else {
-            console.log(x[0].additions)
+            // console.log(x[0].additions)
 
             x[0].additions.push(item)
             setCartProducts(
