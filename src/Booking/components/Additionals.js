@@ -13,16 +13,14 @@ function Additionals(props) {
     const arrow_up = <img src={arrowDown} alt='arrowDown' />
     const arrow_down = <img src={arrowUp} alt='arrowUp' />
     return (
-        <div>
-            <div className="additionals-wrapper">
-                <p className="booking-section-title">{lang.dictionary["booking_additionals"]}</p>
-                <Accordion
-                    faqs={sectionData}
-                    arrow_down={arrow_down}
-                    arrow_up={arrow_up}
-                    AccordionItem={AccordionItem}
-                />
-            </div>
+        <div id="additionals-wrapper">
+            <p className="booking-section-title">{lang.dictionary["booking_additionals"]}</p>
+            <Accordion
+                faqs={sectionData}
+                arrow_down={arrow_down}
+                arrow_up={arrow_up}
+                AccordionItem={AccordionItem}
+            />
         </div>
     );
 }

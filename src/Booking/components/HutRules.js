@@ -12,8 +12,8 @@ function HutRules(props) {
                 style={{ fontWeight: "600" }}
             >{sectionData[0]}</p>
             <div className="booking-section-items hut-rules">
-                {sectionData.slice(1).map((el,index) =>
-                    <p   key={index} className='booking-section-item '>{el}</p>
+                {sectionData.slice(1).map((el, index) =>
+                    <p key={index} className='booking-section-item '>{el}</p>
                 )}
             </div>
 

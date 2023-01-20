@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 12px 24px rgb(0 0 0 / 20%);
+  z-index: 99;
 }
 .react-calendar {
   /* width: 350px; */
@@ -34,7 +35,6 @@
   width: 640px;
   justify-content: space-between;
   align-items: baseline;
-
   margin: 0 auto;
 }
 .react-calendar--doubleView .react-calendar__viewContainer > * {
@@ -265,4 +265,21 @@
   font-size: 36px;
   line-height: 16px;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .calendar-modal {
+    width: 330px;
+    height: 380px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    padding: 24px;
+    
+  }
+  .react-calendar__navigation {
+    width: 100%;
+    height: 20px;
+  }
 }

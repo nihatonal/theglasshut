@@ -189,23 +189,6 @@
   "about_us_section_desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   "about_us_section_galery": "Lorem ipsum dolor sit amet, consectetur adipiscing...",
   "about_us_image_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "form_element": [
-    {
-      "first_name": "First Name",
-      "last_name": "Last Name",
-      "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send"
-    },
-    {
-      "error_fname": "Please enter your name.",
-      "error_lname": "Please enter your last name.",
-      "error_email": "Please enter a valid email.",
-      "error_subject": "Please enter a subject.",
-      "error_textarea": "Your message has to be longer than 100 characters."
-    }
-  ],
   "heart-text": "From Denmark, With love...",
   "faq": [
     {
@@ -413,7 +396,44 @@
       "apply": "Apply",
       "clear": "Clear dates",
       "close": "Close",
-      "error_dates": "Please pick up valid dates"
+      "error_dates": "Please pick up valid dates",
+      "invalid_coupon": "Invalid code. Please try again."
     }
+  ],
+  "form_element": [
+    {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "phone": "Phone umber",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "address": "Address",
+      "postal_code": "Postal code",
+      "city": "City",
+      "country": "Country",
+      "card_type": "Credit or debit card",
+      "card_number": "Card number",
+      "expiration": "Expiration",
+      "ccv": "CCV",
+      "zip_code": "Zip code",
+      "leave_message": "Leave a message",
+      "terms_conditions": "I have read and accept",
+      "terms_conditions_span": "Terms & Conditions",
+      "confirm": "Confirm and pay"
+    },
+    {
+      "error_fname": "Please enter your name.",
+      "error_lname": "Please enter your last name.",
+      "error_email": "Please enter a valid email.",
+      "error_subject": "Please enter a subject.",
+      "error_textarea": "Your message has to be longer than 100 characters."
+    }
+  ],
+  "payment": [
+    "Personal Information",
+    "Pay with",
+    "Additional Information"
   ]
 }

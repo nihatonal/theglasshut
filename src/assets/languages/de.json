@@ -413,7 +413,8 @@
       "apply": "Bewerben",
       "clear": "Daten löschen",
       "close": "Schließen",
-      "error_dates": "Bitte gültige Daten auswählen"
+      "error_dates": "Bitte gültige Daten auswählen",
+      "invalid_coupon": "Ungültiger Code. Bitte versuchen Sie es erneut."
     }
   ]
 }

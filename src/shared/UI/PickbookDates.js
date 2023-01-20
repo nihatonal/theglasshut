@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import moment from "moment";
 import { CartContext } from "../../shared/context/CartContext";
 import { LanguageContext } from "../../shared/context/Language";
 import BookCalendar from '../../shared/UI/BookCalendar';
@@ -11,6 +10,7 @@ function PickbookDates(props) {
     const lang = useContext(LanguageContext);
     const sectionData = lang.dictionary["booking_words"][0];
     const [showCalendar, setShowCalendar] = useState(false);
+
     return (
         <div className="calendar-container">
             <div className="calendar-wrapper">
@@ -33,14 +33,13 @@ function PickbookDates(props) {
                 <BookCalendar
                     style={showCalendar ? { display: 'flex' } : null}
                     close={() => setShowCalendar(false)}
+                    lang={
+                        lang.userLanguage === 'dk' ? 'da' : lang.userLanguage
+                    }
                 />
             </div>
 
-            <button
-                className="cart-book-btn"
-                onClick={() => console.log(cart.dateRange)}>
-                {sectionData.book}
-            </button>
+            {props.children}
         </div>
     );
 }

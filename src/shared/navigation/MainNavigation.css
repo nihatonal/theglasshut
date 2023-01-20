@@ -64,3 +64,30 @@
 .book-btn-small:hover {
   background-color: var(--color-primary-hover);
 }
+
+.header-container .calendar-container {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background-color: #fff;
+  height: 66px;
+  width: 673px;
+  display: flex;
+}
+.header-container .calendar-wrapper {
+  height: 66px;
+  margin: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.header-container .cart-book-btn {
+  height: 66px;
+  flex-shrink: 2;
+}
+.header-container .cart-book-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

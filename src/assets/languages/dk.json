@@ -413,7 +413,8 @@
       "apply": "Anvend",
       "clear": "Ryd datoer",
       "close": "Luk",
-      "error_dates": "Hent venligst gyldige datoer"
+      "error_dates": "Hent venligst gyldige datoer",
+      "invalid_coupon": "Ugyldig kode. Prøv venligst igen."
     }
   ]
 }

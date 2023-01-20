@@ -20,7 +20,7 @@
   line-height: 40px;
 }
 .calendar-wrapper {
-  width: 384px;
+  width: 100%;
   height: 68.77px;
   border: 0.7px solid #5b6460;
   margin: 24px 0;
@@ -67,7 +67,7 @@
   align-items: center;
 }
 .cart-book-btn {
-  width: 384px;
+  width: 100%;
   height: 60px;
   background: #5b6460;
   font-family: "DIN";
@@ -103,6 +103,10 @@
   display: flex;
   justify-content: space-between;
 }
+.discount {
+  color: #41916d;
+}
+
 .cart-total {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -115,13 +119,15 @@
   color: #333333;
 }
 .cart-coupon-wrapper {
-  width: 384px;
+  width: 100%;
   height: 50px;
   display: flex;
+  justify-content: space-between;
   margin-top: 40px;
+  position: relative;
+ 
 }
 .cart-coupon-wrapper input {
-  width: 282.7px;
   height: 50px;
   border: 0.7px solid #5b6460;
   font-family: "Open Sans", sans-serif;
@@ -133,6 +139,12 @@
   align-items: center;
   color: var(--color-black);
   padding-left: 20px;
+  flex-grow: 1;
+}
+.invalid-code {
+  position: absolute;
+  top: -18px;
+  color: rgb(206, 60, 60);
 }
 .cart-coupon-wrapper input::placeholder {
   color: #828282;
@@ -151,4 +163,28 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .cart-wrapper {
+    width: 100%;
+    align-self: flex-start;
+    border: 0.7px solid #5b6460;
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    padding: 18px;
+    color: #333333;
+    margin: 0 auto;
+  }
+  .calendar-wrapper {
+    height: 68.77px;
+    margin: 16px 0;
+  }
+  .cart-book-btn {
+    height: 50px;
+  }
+  .cart-coupon-wrapper {
+    height: 40px;
+    margin-top: 20px;
+  }
 }

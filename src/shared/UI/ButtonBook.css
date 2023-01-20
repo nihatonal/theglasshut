@@ -16,7 +16,9 @@
   text-transform: uppercase;
   color: var(--color-white);
   background-color: var(--color-primary);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .button-book-wrapper:hover .button-book {
   background-color: var(--color-primary-hover);

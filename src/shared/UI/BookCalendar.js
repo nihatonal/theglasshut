@@ -38,18 +38,36 @@ function BookCalendar(props) {
         else (
             cart.setDates(selectedRange)
         )
-    }, [value, markDates])
+    }, [value, markDates]);
+
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+
+    useEffect(() => {
+        function handleWindowResize() {
+            setWindowSize(getWindowSize());
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, []);
+    function getWindowSize() {
+        const { innerWidth, innerHeight } = window;
+        return { innerWidth, innerHeight };
+    }
 
     return (
         <div className='calendar-modal' style={props.style}>
             <Calendar
                 onChange={onChange}
                 value={value}
-                locale={"en"}
+                locale={props.lang}
                 nextLabel={<MdOutlineArrowForwardIos className='calendar-arrow' />}
                 prevLabel={<MdOutlineArrowBackIos className='calendar-arrow' />}
                 selectRange={true}
-                showDoubleView={true}
+                showDoubleView={windowSize.innerWidth > 768 ? true : false}
                 showNavigation={true}
                 showNeighboringMonth={false}
                 showFixedNumberOfWeeks={false}
