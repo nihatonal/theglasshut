@@ -405,7 +405,7 @@
       "first_name": "First Name",
       "last_name": "Last Name",
       "email": "Email",
-      "phone": "Phone umber",
+      "phone": "Phone number",
       "subject": "Subject",
       "message": "Message",
       "send": "Send",
@@ -425,6 +425,7 @@
     },
     {
       "error_fname": "Please enter your name.",
+      "error_str": "Please enter your ",
       "error_lname": "Please enter your last name.",
       "error_email": "Please enter a valid email.",
       "error_subject": "Please enter a subject.",
@@ -435,5 +436,13 @@
     "Personal Information",
     "Pay with",
     "Additional Information"
+  ],
+  "card_type": [
+    {
+      "label": "Credit Card"
+    },
+    {
+      "label": "Debit Card"
+    }
   ]
 }

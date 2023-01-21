@@ -1,4 +1,9 @@
-import React, { useContext, useMemo, useState } from 'react';
+import React, { useContext, useMemo, useEffect, useState } from 'react';
+//import PhoneInput from 'react-phone-input-2';
+import PhoneInput from 'react-phone-number-input'
+import { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
+import 'react-phone-input-2/lib/style.css';
+import 'react-phone-number-input/style.css'
 import { LanguageContext } from "../../shared/context/Language"
 import {
     VALIDATOR_EMAIL,
@@ -8,17 +13,23 @@ import {
 import countryList from 'react-select-country-list'
 import { useForm } from "../../shared/hooks/form-hook";
 import Input from '../../shared/components/formElements/Input';
-import arrowDown from '../../assets/icons/accordion_down_arrow.png';
-import arrowUp from '../../assets/icons/accordion_up_arrow.png';
+import SelectInput from '../../shared/components/formElements/SelectInput';
+
+import paypal from '../../assets/icons/payment_paypal.svg';
+import mastercard from '../../assets/icons/payment_mastercard.svg';
+import visa from '../../assets/icons/payment_visa.svg';
+import bank from '../../assets/icons/payment_bank.svg';
 
 import './Payment.css';
+
 function Payment(props) {
     const lang = useContext(LanguageContext);
     const input_placeholders = lang.dictionary["form_element"][0];
     const input_errors = lang.dictionary["form_element"][1];
     const sectionData = lang.dictionary["payment"];
-    const [country, selectCountry] = useState('')
     const options = useMemo(() => countryList().getData(), []);
+    const card_options = lang.dictionary["card_type"];
+
     const [formState, inputHandler] = useForm(
         {
             fname: {
@@ -35,7 +46,7 @@ function Payment(props) {
             },
             phone: {
                 value: "",
-                isValid: false,
+                isValid: null,
             },
             address: {
                 value: "",
@@ -53,6 +64,30 @@ function Payment(props) {
                 value: "",
                 isValid: false,
             },
+            card_type: {
+                value: "",
+                isValid: false,
+            },
+            card_number: {
+                value: "",
+                isValid: false,
+            },
+            card_expiration: {
+                value: "",
+                isValid: false,
+            },
+            card_ccv: {
+                value: "",
+                isValid: false,
+            },
+            zip_code: {
+                value: "",
+                isValid: false,
+            },
+            card_country: {
+                value: "",
+                isValid: false,
+            },
             message: {
                 value: "",
                 isValid: false,
@@ -60,10 +95,32 @@ function Payment(props) {
         },
         false
     );
+    const [value, setValue] = useState();
+    const [focusPhoneInput, setFocusPhoneInput] = useState(false);
+    const [validPhoneNumber, setValidPhoneNumber] = useState(true)
+
+    const phoneHandler = () => {
+        if (!value) setFocusPhoneInput(false)
+        if (!value) return
+    }
+    useEffect(() => {
+        if (!value) return
+        if (value && !isValidPhoneNumber(value)) {
+            setValidPhoneNumber(false)
+            formState.inputs.phone.isValid = false
+        }
+        if (isValidPhoneNumber(value)) {
+            setValidPhoneNumber(true)
+            formState.inputs.phone.value = value
+            formState.inputs.phone.isValid = true
+        }
+
+    }, [validPhoneNumber, value, formState.inputs.phone]);
+
 
     const submitHandler = (e) => {
         e.preventDefault();
-        console.log(formState.inputs, country)
+        console.log(formState.inputs)
     }
     return (
         <div className='page-container'>
@@ -111,18 +168,21 @@ function Payment(props) {
                                 initialValid={formState.inputs.email.isValid}
                             />
                             <div className='phone-input-wrapper'>
-                                <div className='country-flags'>asd</div>
-                                <Input
-                                    classInput="input-payment"
-                                    id="phone"
-                                    element="input"
-                                    type="text"
-                                    custom_placeholder={input_placeholders.phone}
-                                    error_Text={input_errors.error_lname}
-                                    validators={[VALIDATOR_REQUIRE()]}
-                                    onInput={inputHandler}
-                                    initialValue={formState.inputs.phone.value}
-                                    initialValid={formState.inputs.phone.isValid}
+                                {formState.inputs.phone.isValid ?
+                                    <p className={focusPhoneInput ? 'placeholder placeholder_focused' : 'placeholder'}>
+                                        {'Please enter a valid email.'}
+                                    </p>
+                                    :
+                                    <p className={focusPhoneInput ? 'placeholder placeholder_focused' : 'placeholder'}>
+                                        {!validPhoneNumber ? input_errors.error_email : input_placeholders.phone}
+                                    </p>}
+                                <PhoneInput
+                                    className={focusPhoneInput ? 'invalid-phone' : ''}
+                                    onFocus={() => setFocusPhoneInput(true)}
+                                    onBlur={phoneHandler}
+                                    value={value}
+                                    onChange={setValue}
+                                    international={true}
                                 />
                             </div>
                             <Input
@@ -145,7 +205,7 @@ function Payment(props) {
                                 validators={[VALIDATOR_REQUIRE()]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.postal_code}
-                                error_Text={input_errors.error_fname}
+                                error_Text={input_errors.error_str + input_placeholders.postal_code.toLowerCase()}
                                 initialValue={formState.inputs.postal_code.value}
                                 initialValid={formState.inputs.postal_code.isValid}
                             />
@@ -157,63 +217,92 @@ function Payment(props) {
                                 validators={[VALIDATOR_REQUIRE()]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.city}
-                                error_Text={input_errors.error_fname}
+                                error_Text={input_errors.error_str + input_placeholders.city.toLowerCase()}
                                 initialValue={formState.inputs.city.value}
                                 initialValid={formState.inputs.city.isValid}
                             />
-                            <div className="select_input-wrapper">
-                                {/* <Input
-                                    classInput="input-payment"
-                                    id="country"
-                                    element="input"
-                                    type="text"
-                                    validators={[VALIDATOR_REQUIRE()]}
-                                    onInput={inputHandler}
-                                    custom_placeholder={input_placeholders.country}
-                                    error_Text={input_errors.error_fname}
-                                    initialValue={formState.inputs.country.value}
-                                    initialValid={formState.inputs.country.isValid}
-                                /> */}
-                                <input
-                                    // id="country"
-                                    type="text"
-                                    onChange={(e) => {
-                                        selectCountry(e.target.value)
-                                    }}
-                                    value={country}
-                                />
-                                {
-                                    <p
-                                        className={'placeholder'}
-                                    >
-                                        {/* placeholder-touched */}
-                                        {input_placeholders.country}
-                                    </p>
-                                }
+                            <SelectInput
+                                options={options}
+                                onClick={(e) => formState.inputs.country.value = e.target.innerText}
+                                placeholder={input_placeholders.country}
+                            />
 
-                                <div className="select_input_button">
-                                    <img src={arrowDown} alt='arrow' />
-                                </div>
-                                <div className='select-options'>
-                                    <ul>
-                                        {options.filter(
-                                            (f) =>
-                                                f.label.toUpperCase().includes(country.toUpperCase())
-                                        ).map((el) =>
-                                            <li onClick={() => {
-                                                selectCountry(el.label)
-                                                formState.inputs.country.value = el.label
-                                            }}>
-                                                {el.label}
-                                            </li>
-                                        )}
-                                    </ul>
-
-                                </div>
-                            </div >
                         </div>
 
 
+                    </div>
+                    <div className="payment-section card-info">
+                        <div className="booking-section-title">
+                            <p>{sectionData[1]}</p>
+                            <div className="payment_icons">
+                                <img src={paypal} alt='payment_icons' />
+                                <img src={mastercard} alt='payment_icons' />
+                                <img src={visa} alt='payment_icons' />
+                                <img src={bank} alt='payment_icons' />
+                            </div>
+
+                        </div>
+
+                        <div className='payment_form card-info_form' >
+                            <SelectInput
+                                options={card_options}
+                                onClick={(e) => formState.inputs.card_type.value = e.target.innerText}
+                                placeholder={input_placeholders.card_type}
+                            />
+                            <Input
+                                classInput="input-payment card_number"
+                                id="card_number"
+                                element="input"
+                                type="text"
+                                validators={[VALIDATOR_REQUIRE()]}
+                                onInput={inputHandler}
+                                custom_placeholder={input_placeholders.card_number}
+                                error_Text={input_errors.error_str + input_placeholders.card_number.toLowerCase()}
+                                initialValue={formState.inputs.card_number.value}
+                                initialValid={formState.inputs.card_number.isValid}
+                            />
+                            <Input
+                                classInput="input-payment"
+                                id="card_expiration"
+                                element="input"
+                                type="text"
+                                validators={[VALIDATOR_REQUIRE()]}
+                                onInput={inputHandler}
+                                custom_placeholder={input_placeholders.expiration}
+                                error_Text={input_errors.error_fname}
+                                initialValue={formState.inputs.card_expiration.value}
+                                initialValid={formState.inputs.card_expiration.isValid}
+                            />
+                            <Input
+                                classInput="input-payment"
+                                id="card_ccv"
+                                element="input"
+                                type="text"
+                                validators={[VALIDATOR_REQUIRE()]}
+                                onInput={inputHandler}
+                                custom_placeholder={input_placeholders.ccv}
+                                error_Text={input_errors.error_str + "card " + input_placeholders.ccv.toLowerCase()}
+                                initialValue={formState.inputs.card_ccv.value}
+                                initialValid={formState.inputs.card_ccv.isValid}
+                            />
+                            <Input
+                                classInput="input-payment"
+                                id="zip_code"
+                                element="input"
+                                type="text"
+                                validators={[VALIDATOR_REQUIRE()]}
+                                onInput={inputHandler}
+                                custom_placeholder={input_placeholders.zip_code}
+                                error_Text={input_errors.error_str + input_placeholders.zip_code.toLowerCase()}
+                                initialValue={formState.inputs.zip_code.value}
+                                initialValid={formState.inputs.zip_code.isValid}
+                            />
+                            <SelectInput
+                                options={options}
+                                onClick={(e) => formState.inputs.card_country.value = e.target.innerText}
+                                placeholder={input_placeholders.country}
+                            />
+                        </div>
                     </div>
                     <button type='submit'>{input_placeholders.confirm}</button>
                 </form>
