@@ -419,7 +419,7 @@
       "ccv": "CCV",
       "zip_code": "Zip code",
       "leave_message": "Leave a message",
-      "terms_conditions": "I have read and accept",
+      "terms_conditions": "I have read and accept ",
       "terms_conditions_span": "Terms & Conditions",
       "confirm": "Confirm and pay"
     },
@@ -444,5 +444,6 @@
     {
       "label": "Debit Card"
     }
-  ]
+  ],
+  "theglasshut":"The Glass Hut"
 }

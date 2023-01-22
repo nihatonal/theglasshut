@@ -1,12 +1,12 @@
 import React, { useContext, useState } from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 import { CartContext } from "../../shared/context/CartContext";
 import { LanguageContext } from "../../shared/context/Language";
 
 import PickbookDates from '../../shared/UI/PickbookDates';
 import './Cart.css';
-function Cart() {
+function Cart(props) {
     const cart = useContext(CartContext);
     const lang = useContext(LanguageContext);
     const sectionData = lang.dictionary["booking_words"][0];
@@ -44,13 +44,15 @@ function Cart() {
     }
     return (
         <div className='cart-wrapper'>
+            {props.children}
             <p className='cart-title'>3200kr<span> / {sectionData.night}</span></p>
             <PickbookDates>
-                <button
+                <NavLink
+                to={'/booking/payment'}
                     className="cart-book-btn"
                     onClick={() => console.log(cart.dateRange)}>
                     {sectionData.book}
-                </button>
+                </NavLink>
             </PickbookDates>
             <div className="cart-items-wrapper">
                 <div className="cart-item">

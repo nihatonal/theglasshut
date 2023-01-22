@@ -1,12 +1,69 @@
+.payment_container {
+  display: flex;
+  justify-content: center;
+}
 .payment-wrapper {
   width: 1230px;
-  margin: 0 auto;
-  height: 1230px;
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 138px;
+  margin: 100px 0 150px;
 }
 
+.back-to-booking-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-right: auto;
+}
+.back-to-booking-link span {
+  font-family: "DIN";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-left: 20px;
+}
+.card-title-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-title-wrapper p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+}
+.card-title-wrapper p:last-child {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.payment-wrapper .cart-book-btn,
+.payment-wrapper .cart-coupon-wrapper,
+.payment-wrapper .cart-title {
+  display: none;
+}
+.payment-wrapper .calendar-container {
+  pointer-events: none;
+}
+.payment-wrapper form {
+  display: grid;
+  /* row-gap: 100px; */
+}
 .payment-section {
   width: 660px;
+  margin-bottom: 100px;
+}
+.payment-section:nth-last-child(3) {
+  margin-bottom: 50px;
 }
 .payment_form {
   display: grid;
@@ -70,7 +127,7 @@
   width: 100%;
 }
 .phone-input-wrapper .placeholder span {
-  color: red;
+  color: rgb(230, 34, 93);
 }
 
 .message-info .textarea-contact textarea {
@@ -86,12 +143,32 @@
 .unchecked {
   border: 0.7px solid #5b6460;
   color: #5b6460;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.unchecked:hover, .checked:hover {
+.unchecked:hover,
+.checked:hover {
   box-shadow: 0 0 5px #5b6460;
 }
+.term_confirm_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
 
+.term_confirm_wrapper p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333333;
+  margin-left: 20px;
+}
+.term_confirm_wrapper p span {
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: #5b6460;
+}
 .payment-wrapper form button {
   width: 384px;
   height: 60px;

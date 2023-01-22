@@ -1,26 +1,32 @@
 import React, { useContext, useMemo, useEffect, useState } from 'react';
-//import PhoneInput from 'react-phone-input-2';
+import { NavLink } from 'react-router-dom';
 import PhoneInput from 'react-phone-number-input'
-import { isValidPhoneNumber, isPossiblePhoneNumber } from 'react-phone-number-input'
+import { isValidPhoneNumber } from 'react-phone-number-input'
 import 'react-phone-input-2/lib/style.css';
 import 'react-phone-number-input/style.css'
 import { LanguageContext } from "../../shared/context/Language"
 import {
     VALIDATOR_EMAIL,
+    VALIDATOR_PHONE,
     VALIDATOR_MINLENGTH,
-    VALIDATOR_REQUIRE
+    VALIDATOR_REQUIRE,
+    VALIDATOR_MAXLENGTH
 } from "../../shared/util/validators.js";
 import countryList from 'react-select-country-list'
 import { useForm } from "../../shared/hooks/form-hook";
 import Input from '../../shared/components/formElements/Input';
 import SelectInput from '../../shared/components/formElements/SelectInput';
+import Cart from '../components/Cart';
+
 
 import paypal from '../../assets/icons/payment_paypal.svg';
 import mastercard from '../../assets/icons/payment_mastercard.svg';
 import visa from '../../assets/icons/payment_visa.svg';
 import bank from '../../assets/icons/payment_bank.svg';
-
 import { HiOutlineCheck } from "react-icons/hi";
+import arrow from '../../assets/icons/back_arrow.svg';
+import { MdLocationOn } from "react-icons/md";
+
 
 import './Payment.css';
 
@@ -67,8 +73,8 @@ function Payment(props) {
                 isValid: false,
             },
             card_type: {
-                value: "",
-                isValid: false,
+                value: "Credit Card",
+                isValid: true,
             },
             card_number: {
                 value: "",
@@ -92,7 +98,7 @@ function Payment(props) {
             },
             message: {
                 value: "",
-                isValid: false,
+                isValid: true,
             },
         },
         false
@@ -119,10 +125,6 @@ function Payment(props) {
 
     }, [validPhoneNumber, value, formState.inputs.phone]);
 
-
-
-
-
     const submitHandler = (e) => {
         e.preventDefault();
         console.log(formState.inputs)
@@ -130,8 +132,23 @@ function Payment(props) {
 
 
     return (
-        <div className='page-container'>
+        <div className='page-container payment_container'>
             <div className="payment-wrapper">
+                <NavLink to='/booking' className="back-to-booking-link">
+                    <img src={arrow} alt='arrow' />
+                    <span>{lang.dictionary["booking"]}</span>
+                </NavLink>
+                <Cart>
+                    <div className="card-title-wrapper">
+                        <p>{lang.dictionary["theglasshut"]}</p>
+                        <p>
+                            <MdLocationOn className='location-icon' />
+                            {lang.dictionary["section_contact-address"]}
+
+                        </p>
+
+                    </div>
+                </Cart>
                 <form onSubmit={submitHandler}>
                     <div className="payment-section personal-info">
                         <p className="booking-section-title">
@@ -226,7 +243,11 @@ function Payment(props) {
                             />
                             <SelectInput
                                 options={options}
-                                onClick={(e) => formState.inputs.country.value = e.target.innerText}
+                                onClick={(e) => {
+                                    console.log(e.target.innerText)
+                                    formState.inputs.country.value = e.target.innerText
+                                    formState.inputs.country.isValid = true
+                                }}
                                 placeholder={input_placeholders.country}
                             />
 
@@ -249,7 +270,10 @@ function Payment(props) {
                         <div className='payment_form card-info_form' >
                             <SelectInput
                                 options={card_options}
-                                onClick={(e) => formState.inputs.card_type.value = e.target.innerText}
+                                onClick={(e) => {
+                                    formState.inputs.card_type.value = e.target.innerText
+                                    formState.inputs.card_type.isValid = true
+                                }}
                                 placeholder={input_placeholders.card_type}
                             />
                             <Input
@@ -257,7 +281,8 @@ function Payment(props) {
                                 id="card_number"
                                 element="input"
                                 type="text"
-                                validators={[VALIDATOR_REQUIRE()]}
+                                // pattern="[0-9]{10}"
+                                validators={[VALIDATOR_PHONE()]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.card_number}
                                 error_Text={input_errors.error_str + input_placeholders.card_number.toLowerCase()}
@@ -281,7 +306,7 @@ function Payment(props) {
                                 id="card_ccv"
                                 element="input"
                                 type="text"
-                                validators={[VALIDATOR_REQUIRE()]}
+                                validators={[VALIDATOR_REQUIRE(), VALIDATOR_MINLENGTH(3), VALIDATOR_MAXLENGTH(3)]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.ccv}
                                 error_Text={input_errors.error_str + "card " + input_placeholders.ccv.toLowerCase()}
@@ -302,7 +327,10 @@ function Payment(props) {
                             />
                             <SelectInput
                                 options={options}
-                                onClick={(e) => formState.inputs.card_country.value = e.target.innerText}
+                                onClick={(e) => {
+                                    formState.inputs.card_country.value = e.target.innerText
+                                    formState.inputs.card_country.isValid = true
+                                }}
                                 placeholder={input_placeholders.country}
                             />
                         </div>
@@ -318,7 +346,7 @@ function Payment(props) {
                             type="text"
                             custom_placeholder={input_placeholders.leave_message}
                             error_Text={input_errors.error_textarea}
-                            validators={[VALIDATOR_MINLENGTH(100)]}
+                            validators={[]}
                             onInput={inputHandler}
                             initialValue={formState.inputs.message.value}
                             initialValid={formState.inputs.message.isValid}
@@ -337,8 +365,17 @@ function Payment(props) {
 
                             <span className={checked ? "checked" : "unchecked"}>{checked ? <HiOutlineCheck /> : <HiOutlineCheck />}</span>
                         </label>
+                        <p>{input_placeholders.terms_conditions}
+                            <span>{input_placeholders.terms_conditions_span}</span>
+                        </p>
                     </div>
-                    <button type='submit'>{input_placeholders.confirm}</button>
+                    <button
+                        // onClick={() => checked && formState.isValid && console.log(checked, formState.isValid)}
+                        type='submit'
+                        disabled={!checked || !formState.isValid}
+                    >
+                        {input_placeholders.confirm}
+                    </button>
                 </form>
             </div >
         </div >

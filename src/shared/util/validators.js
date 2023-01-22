@@ -45,7 +45,7 @@ export const validate = (value, validators) => {
       isValid = isValid && +value >= validator.val;
     }
     if (validator.type === VALIDATOR_TYPE_PHONE) {
-      isValid = isValid && /[0-9]{11}$/.test(value);
+      isValid = isValid && /[0-9]{16}$/.test(value);
     }
     if (validator.type === VALIDATOR_TYPE_CODE) {
       isValid = isValid && /[0-9]{3}-[0-9]{3}$/.test(value);
