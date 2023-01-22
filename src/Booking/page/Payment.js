@@ -20,6 +20,8 @@ import mastercard from '../../assets/icons/payment_mastercard.svg';
 import visa from '../../assets/icons/payment_visa.svg';
 import bank from '../../assets/icons/payment_bank.svg';
 
+import { HiOutlineCheck } from "react-icons/hi";
+
 import './Payment.css';
 
 function Payment(props) {
@@ -98,7 +100,7 @@ function Payment(props) {
     const [value, setValue] = useState();
     const [focusPhoneInput, setFocusPhoneInput] = useState(false);
     const [validPhoneNumber, setValidPhoneNumber] = useState(true)
-
+    const [checked, setChecked] = useState(false);
     const phoneHandler = () => {
         if (!value) setFocusPhoneInput(false)
         if (!value) return
@@ -118,10 +120,15 @@ function Payment(props) {
     }, [validPhoneNumber, value, formState.inputs.phone]);
 
 
+
+
+
     const submitHandler = (e) => {
         e.preventDefault();
         console.log(formState.inputs)
     }
+
+
     return (
         <div className='page-container'>
             <div className="payment-wrapper">
@@ -168,14 +175,10 @@ function Payment(props) {
                                 initialValid={formState.inputs.email.isValid}
                             />
                             <div className='phone-input-wrapper'>
-                                {formState.inputs.phone.isValid ?
-                                    <p className={focusPhoneInput ? 'placeholder placeholder_focused' : 'placeholder'}>
-                                        {'Please enter a valid email.'}
-                                    </p>
-                                    :
-                                    <p className={focusPhoneInput ? 'placeholder placeholder_focused' : 'placeholder'}>
-                                        {!validPhoneNumber ? input_errors.error_email : input_placeholders.phone}
-                                    </p>}
+
+                                <p className={focusPhoneInput ? 'placeholder placeholder_focused' : 'placeholder'}>
+                                    {!validPhoneNumber ? <span>{input_errors.error_email}</span> : input_placeholders.phone}
+                                </p>
                                 <PhoneInput
                                     className={focusPhoneInput ? 'invalid-phone' : ''}
                                     onFocus={() => setFocusPhoneInput(true)}
@@ -303,6 +306,37 @@ function Payment(props) {
                                 placeholder={input_placeholders.country}
                             />
                         </div>
+                    </div>
+                    <div className="payment-section message-info">
+                        <p className="booking-section-title">
+                            {sectionData[2]}
+                        </p>
+                        <Input
+                            classInput="textarea-contact"
+                            id="message"
+                            element="textarea"
+                            type="text"
+                            custom_placeholder={input_placeholders.leave_message}
+                            error_Text={input_errors.error_textarea}
+                            validators={[VALIDATOR_MINLENGTH(100)]}
+                            onInput={inputHandler}
+                            initialValue={formState.inputs.message.value}
+                            initialValid={formState.inputs.message.isValid}
+                        />
+                    </div>
+                    <div className="term_confirm_wrapper">
+                        <label className="check-button">
+                            <input
+                                type="checkbox"
+                                id={'checkbox'}
+                                name={'checkbox'}
+                                value={checked}
+                                checked={checked}
+                                onChange={() => setChecked(!checked)}
+                            />
+
+                            <span className={checked ? "checked" : "unchecked"}>{checked ? <HiOutlineCheck /> : <HiOutlineCheck />}</span>
+                        </label>
                     </div>
                     <button type='submit'>{input_placeholders.confirm}</button>
                 </form>

@@ -69,6 +69,29 @@
 .PhoneInput {
   width: 100%;
 }
+.phone-input-wrapper .placeholder span {
+  color: red;
+}
+
+.message-info .textarea-contact textarea {
+  height: 100px;
+}
+.term_confirm_wrapper input {
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.unchecked {
+  border: 0.7px solid #5b6460;
+  color: #5b6460;
+  transition: all .2s;
+}
+.unchecked:hover, .checked:hover {
+  box-shadow: 0 0 5px #5b6460;
+}
+
 .payment-wrapper form button {
   width: 384px;
   height: 60px;
@@ -102,7 +125,7 @@
 .card_number {
   grid-column: 1 / span 2;
 }
-.card_number{
+.card_number {
   z-index: 80;
 }
 .card-info_form .select-options {
