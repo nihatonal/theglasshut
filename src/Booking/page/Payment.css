@@ -183,6 +183,9 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+.payment-wrapper form button:hover {
+  box-shadow: 0 0 10px rgb(36, 36, 36);
+}
 
 /*payment*/
 .card-info .booking-section-title {

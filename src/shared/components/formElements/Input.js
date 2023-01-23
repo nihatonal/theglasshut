@@ -62,6 +62,19 @@ const Input = props => {
 
     return parts.length > 1 ? parts.join(" ") : value;
   }
+  function expiration_format(value) {
+    const v = value
+      .replace(/\s+/g, "")
+      .replace(/[^0-9]/gi, "")
+      .substr(0, 4);
+    const parts = [];
+
+    for (let i = 0; i < v.length; i += 2) {
+      parts.push(v.substr(i, 2));
+    }
+
+    return parts.length > 1 ? parts.join("/") : value;
+  }
 
   const element =
     props.element === 'input' ? (
@@ -71,7 +84,8 @@ const Input = props => {
         type={props.type}
         onChange={changeHandler}
         onBlur={touchHandler}
-        value={props.id === 'card_number' ? cc_format(inputState.value) : inputState.value}
+        value={props.id === 'card_number' ? cc_format(inputState.value) :
+          props.id === 'card_expiration' ? expiration_format(inputState.value) : inputState.value}
         pattern={props.pattern}
       />
     ) : (

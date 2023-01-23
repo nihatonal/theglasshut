@@ -2,7 +2,7 @@ const VALIDATOR_TYPE_REQUIRE = 'REQUIRE';
 const VALIDATOR_TYPE_MINLENGTH = 'MINLENGTH';
 const VALIDATOR_TYPE_MAXLENGTH = 'MAXLENGTH';
 const VALIDATOR_TYPE_MIN = 'MIN';
-const VALIDATOR_TYPE_PHONE = 'PHONES';
+const VALIDATOR_TYPE_EXPIRATION = 'EXPIRATION';
 const VALIDATOR_TYPE_EMAIL = 'EMAIL';
 const VALIDATOR_TYPE_FILE = 'FILE';
 const VALIDATOR_TYPE_NUMBER = 'NUMBER';
@@ -22,14 +22,14 @@ export const VALIDATOR_MAXLENGTH = val => ({
   val: val
 });
 export const VALIDATOR_MIN = val => ({ type: VALIDATOR_TYPE_MIN, val: val });
-export const VALIDATOR_PHONE = val => ({ type: VALIDATOR_TYPE_PHONE, val: val });
+export const VALIDATOR_EXPIRATION = (year, month) => ({ type: VALIDATOR_TYPE_EXPIRATION, year: year, month: month });
 export const VALIDATOR_EMAIL = () => ({ type: VALIDATOR_TYPE_EMAIL });
 export const VALIDATOR_CODE = () => ({ type: VALIDATOR_TYPE_CODE });
 export const VALIDATOR_PASSWORD = () => ({ type: VALIDATOR_TYPE_PASSWORD });
 export const VALIDATOR_PASSWORD_CONFIRM = val => ({ type: VALIDATOR_TYPE_PASSWORD_CONFIRM, val: val });
 
 export const validate = (value, validators) => {
-  
+
   let isValid = true;
   for (const validator of validators) {
     if (validator.type === VALIDATOR_TYPE_REQUIRE) {
@@ -44,8 +44,9 @@ export const validate = (value, validators) => {
     if (validator.type === VALIDATOR_TYPE_MIN) {
       isValid = isValid && +value >= validator.val;
     }
-    if (validator.type === VALIDATOR_TYPE_PHONE) {
-      isValid = isValid && /[0-9]{16}$/.test(value);
+    if (validator.type === VALIDATOR_TYPE_EXPIRATION) {
+      isValid = isValid && Number(value.slice(0, 2)) <= validator.year && Number(value.slice(-2)) <= validator.month;
+
     }
     if (validator.type === VALIDATOR_TYPE_CODE) {
       isValid = isValid && /[0-9]{3}-[0-9]{3}$/.test(value);
@@ -61,7 +62,8 @@ export const validate = (value, validators) => {
     }
     if (validator.type === VALIDATOR_TYPE_PASSWORD_CONFIRM) {
       isValid = isValid && value === validator.val;
-    }}
+    }
+  }
   return isValid;
 };
 

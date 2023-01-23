@@ -7,7 +7,7 @@ import 'react-phone-number-input/style.css'
 import { LanguageContext } from "../../shared/context/Language"
 import {
     VALIDATOR_EMAIL,
-    VALIDATOR_PHONE,
+    VALIDATOR_EXPIRATION,
     VALIDATOR_MINLENGTH,
     VALIDATOR_REQUIRE,
     VALIDATOR_MAXLENGTH
@@ -129,7 +129,6 @@ function Payment(props) {
         e.preventDefault();
         console.log(formState.inputs)
     }
-
 
     return (
         <div className='page-container payment_container'>
@@ -281,8 +280,7 @@ function Payment(props) {
                                 id="card_number"
                                 element="input"
                                 type="text"
-                                // pattern="[0-9]{10}"
-                                validators={[VALIDATOR_PHONE()]}
+                                validators={[VALIDATOR_MAXLENGTH(20), VALIDATOR_MINLENGTH(20)]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.card_number}
                                 error_Text={input_errors.error_str + input_placeholders.card_number.toLowerCase()}
@@ -294,10 +292,10 @@ function Payment(props) {
                                 id="card_expiration"
                                 element="input"
                                 type="text"
-                                validators={[VALIDATOR_REQUIRE()]}
+                                validators={[VALIDATOR_EXPIRATION(12, 31)]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.expiration}
-                                error_Text={input_errors.error_fname}
+                                error_Text={input_errors.error_card_expiration}
                                 initialValue={formState.inputs.card_expiration.value}
                                 initialValid={formState.inputs.card_expiration.isValid}
                             />
