@@ -72,7 +72,7 @@ const Input = props => {
     for (let i = 0; i < v.length; i += 2) {
       parts.push(v.substr(i, 2));
     }
-
+    console.log(v)
     return parts.length > 1 ? parts.join("/") : value;
   }
 

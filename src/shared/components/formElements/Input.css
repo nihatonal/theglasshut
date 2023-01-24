@@ -29,7 +29,7 @@
   line-height: 18px;
   color: #333333;
   position: relative;
-  z-index: 99;
+  z-index: 45;
 }
 
 .form-control input:focus,

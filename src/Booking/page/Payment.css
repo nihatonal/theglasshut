@@ -27,11 +27,11 @@
   color: #333333;
   margin-left: 20px;
 }
-.card-title-wrapper {
+.cart-title-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.card-title-wrapper p {
+.cart-title-wrapper p {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -39,7 +39,7 @@
   line-height: 40px;
   color: #333333;
 }
-.card-title-wrapper p:last-child {
+.cart-title-wrapper p:last-child {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -72,7 +72,6 @@
 }
 .phone-input-wrapper {
   display: grid;
-  /* grid-template-columns: 71px 1fr; */
   border: 0.7px solid #5b6460;
   position: relative;
   z-index: 99;
@@ -95,7 +94,8 @@
   transition: all 0.2;
 }
 
-.phone-input-wrapper .placeholder {
+.phone-input-wrapper .placeholder,
+.expiration_date-input-wrapper .placeholder {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +110,8 @@
   height: 18px;
   margin-left: 71px;
 }
-.phone-input-wrapper .placeholder_focused {
+.phone-input-wrapper .placeholder_focused,
+.expiration_date-input-wrapper .placeholder_focused {
   top: 8px;
   font-size: 8px;
 }
@@ -126,7 +127,8 @@
 .PhoneInput {
   width: 100%;
 }
-.phone-input-wrapper .placeholder span {
+.phone-input-wrapper .placeholder span,
+.expiration_date-input-wrapper .placeholder span {
   color: rgb(230, 34, 93);
 }
 
@@ -169,7 +171,7 @@
   text-decoration-line: underline;
   color: #5b6460;
 }
-.payment-wrapper form button {
+.payment-wrapper form .submit_button {
   width: 384px;
   height: 60px;
   background: #5b6460;
@@ -211,4 +213,38 @@
 .card-info_form .select-options {
   overflow: hidden;
   width: 50%;
+}
+
+.expiration_date-input-wrapper {
+  display: grid;
+  border: 0.7px solid #5b6460;
+  position: relative;
+  z-index: 99;
+}
+@media screen and (max-width: 767px) {
+  .payment-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0 80px;
+    padding: 0 20px;
+  }
+  .payment-section {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .payment-wrapper .cart-wrapper {
+    display: none;
+  }
+  .payment_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .back-to-booking-link {
+    margin-bottom: 25px;
+  }
+  .payment-section:nth-last-child(3) {
+    margin-bottom: 0;
+  }
 }

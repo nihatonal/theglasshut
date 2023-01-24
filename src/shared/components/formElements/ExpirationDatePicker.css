@@ -1,0 +1,96 @@
+.expiration_date-input-wrapper .expiration_date .placeholder {
+  margin-left: 0;
+}
+.date-wrapper {
+  position: absolute;
+  z-index: 99;
+  top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  background: rgb(184, 184, 184);
+  background: linear-gradient(
+    rgba(180, 180, 180, 1),
+    rgb(146, 146, 146),
+    rgba(180, 180, 180, 1)
+  );
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.date-wrapper-item {
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.year,
+.month {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+  color: rgb(68, 68, 68);
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.month:hover,
+.year:hover {
+  color: #fff;
+}
+
+/* width */
+.date-wrapper-item::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.date-wrapper-item::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0;
+  background-clip: content-box;
+}
+
+/* Handle */
+.date-wrapper-item::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 5px;
+  width: 3px;
+}
+
+/* Handle on hover */
+.date-wrapper-item::-webkit-scrollbar-thumb:hover {
+  background: rgb(2, 80, 76);
+}
+
+.expiration_date input {
+  width: 100%;
+  height: 50px;
+  font: inherit;
+  background: transparent;
+  padding: 0 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  position: relative;
+  z-index: 45;
+}
+
+.date-wrapper-item .slick-list .slick-arrow {
+  width: 34px;
+}
+.date-wrapper-item .slick-list .slick-next {
+  transform: rotate(90);
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+}

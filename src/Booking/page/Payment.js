@@ -17,7 +17,7 @@ import { useForm } from "../../shared/hooks/form-hook";
 import Input from '../../shared/components/formElements/Input';
 import SelectInput from '../../shared/components/formElements/SelectInput';
 import Cart from '../components/Cart';
-
+import ExpirationDatePicker from '../../shared/components/formElements/ExpirationDatePicker';
 
 import paypal from '../../assets/icons/payment_paypal.svg';
 import mastercard from '../../assets/icons/payment_mastercard.svg';
@@ -96,7 +96,7 @@ function Payment(props) {
                 value: "",
                 isValid: false,
             },
-            message: {
+            message_: {
                 value: "",
                 isValid: true,
             },
@@ -127,6 +127,7 @@ function Payment(props) {
 
     const submitHandler = (e) => {
         e.preventDefault();
+        console.log(formState.isValid)
         console.log(formState.inputs)
     }
 
@@ -138,7 +139,7 @@ function Payment(props) {
                     <span>{lang.dictionary["booking"]}</span>
                 </NavLink>
                 <Cart>
-                    <div className="card-title-wrapper">
+                    <div className="cart-title-wrapper">
                         <p>{lang.dictionary["theglasshut"]}</p>
                         <p>
                             <MdLocationOn className='location-icon' />
@@ -212,7 +213,7 @@ function Payment(props) {
                                 validators={[VALIDATOR_REQUIRE()]}
                                 onInput={inputHandler}
                                 custom_placeholder={input_placeholders.address}
-                                error_Text={input_errors.error_fname}
+                                error_Text={input_errors.error_str + input_placeholders.address.toLowerCase()}
                                 initialValue={formState.inputs.address.value}
                                 initialValid={formState.inputs.address.isValid}
                             />
@@ -339,15 +340,15 @@ function Payment(props) {
                         </p>
                         <Input
                             classInput="textarea-contact"
-                            id="message"
+                            id="message_"
                             element="textarea"
                             type="text"
                             custom_placeholder={input_placeholders.leave_message}
                             error_Text={input_errors.error_textarea}
                             validators={[]}
                             onInput={inputHandler}
-                            initialValue={formState.inputs.message.value}
-                            initialValid={formState.inputs.message.isValid}
+                            initialValue={formState.inputs.message_.value}
+                            initialValid={true}
                         />
                     </div>
                     <div className="term_confirm_wrapper">
@@ -368,9 +369,10 @@ function Payment(props) {
                         </p>
                     </div>
                     <button
-                        // onClick={() => checked && formState.isValid && console.log(checked, formState.isValid)}
+                        className='submit_button'
+                        onClick={() => !checked && !formState.isValid && console.log(checked, formState.isValid)}
                         type='submit'
-                        disabled={!checked || !formState.isValid}
+                    // disabled={!checked || !formState.isValid}
                     >
                         {input_placeholders.confirm}
                     </button>

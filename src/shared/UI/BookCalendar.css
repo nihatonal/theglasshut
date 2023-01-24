@@ -276,10 +276,17 @@
     left: 0;
     top: 75px;
     padding: 24px;
-    
   }
   .react-calendar__navigation {
     width: 100%;
     height: 20px;
+  }
+  .error_modal {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .error_modal p {
+    font-size: 18px;
+    line-height: 16px;
   }
 }
