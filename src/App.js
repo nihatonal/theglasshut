@@ -35,7 +35,7 @@ function App() {
                 <Route exact path="/faq" element={<Faq />} />
                 <Route exact path="/booking" element={<Booking />} />
                 <Route exact path="/booking/payment" element={<Payment />} />
-                {/* <Route exact path="/delivery/:fname" element={<Store />} />*/}
+                <Route exact path="*" element={<Home />} />
               </Routes>
               {/* <Contact /> */}
               <Footer />

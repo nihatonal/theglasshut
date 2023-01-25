@@ -181,6 +181,7 @@
   .calendar-wrapper {
     height: 68.77px;
     margin: 16px 0;
+    position: static;
   }
   .cart-book-btn {
     height: 50px;
