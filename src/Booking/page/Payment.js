@@ -17,7 +17,6 @@ import { useForm } from "../../shared/hooks/form-hook";
 import Input from '../../shared/components/formElements/Input';
 import SelectInput from '../../shared/components/formElements/SelectInput';
 import Cart from '../components/Cart';
-import ExpirationDatePicker from '../../shared/components/formElements/ExpirationDatePicker';
 
 import paypal from '../../assets/icons/payment_paypal.svg';
 import mastercard from '../../assets/icons/payment_mastercard.svg';

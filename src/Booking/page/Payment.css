@@ -234,7 +234,26 @@
     margin-bottom: 50px;
   }
   .payment-wrapper .cart-wrapper {
-    display: none;
+    grid-row: 2;
+    margin-bottom: 50px;
+  }
+  .cart-title-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cart-title-wrapper p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+  }
+  .cart-title-wrapper p:last-child {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
   }
   .payment_form {
     display: grid;
